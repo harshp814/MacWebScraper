@@ -1,2 +1,3 @@
-__pycache__/
-spiders/__pycache__/
+/Mac_Web_Scraper/__pycache__
+/Mac_Web_Scraper/spiders/__pycache__
+debug.log
