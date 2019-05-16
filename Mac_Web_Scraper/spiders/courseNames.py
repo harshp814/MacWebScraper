@@ -23,10 +23,12 @@ class CourseNamesSpider(scrapy.Spider):
         anchorTags = response.xpath("//table[@class='table_default'][2]/tr[position()>2 and position()<last()]/td[2]/a/text()").extract()
         courseNames = {}
         for i in range(len(anchorTags)):
+            department = re.search("^[\w]*", anchorTags[i])
+            courseCode = re.search(r"\b[A-Z0-9]{4}\b", anchorTags[i])
             yield {
                 "fullName" : anchorTags[i],
-                "department" : re.search("^[\w]*", anchorTags[i]),
-                "courseCode" : re.search("\b[A-Z0-9]{4}\b", anchorTags[i])
+                "department" : department.group(0),
+                "courseCode" : courseCode.group(0)
             }       
             # url = self.changeInputs(i, departments[i])
         
