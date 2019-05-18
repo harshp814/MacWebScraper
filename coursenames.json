@@ -486,40 +486,1024 @@
     "courseName": "Spoken Moroccan Arabic"
   },
   {
-    "fullName": "BIOMEDDC 2C03 - Exploring Careers in Biomedical Sciences",
-    "department": "BIOMEDDC",
+    "fullName": "ART 1DM3 - Dimensional Material Investigations and Concepts",
+    "department": "ART",
+    "courseCode": "1DM3",
+    "courseName": "Dimensional Material Investigations and Concepts"
+  },
+  {
+    "fullName": "ART 1MI3 - Material Investigations and Concepts",
+    "department": "ART",
+    "courseCode": "1MI3",
+    "courseName": "Material Investigations and Concepts"
+  },
+  {
+    "fullName": "ART 1OS3 - Observational Studies",
+    "department": "ART",
+    "courseCode": "1OS3",
+    "courseName": "Observational Studies"
+  },
+  {
+    "fullName": "ART 1SI3 - Studio Investigations",
+    "department": "ART",
+    "courseCode": "1SI3",
+    "courseName": "Studio Investigations"
+  },
+  {
+    "fullName": "ART 1TI3 - Making Art and Understanding Technology & Images",
+    "department": "ART",
+    "courseCode": "1TI3",
+    "courseName": "Making Art and Understanding Technology & Images"
+  },
+  {
+    "fullName": "ART 1UI3 - Making Art and Understanding Images",
+    "department": "ART",
+    "courseCode": "1UI3",
+    "courseName": "Making Art and Understanding Images"
+  },
+  {
+    "fullName": "ART 2AT3 - Art Today",
+    "department": "ART",
+    "courseCode": "2AT3",
+    "courseName": "Art Today"
+  },
+  {
+    "fullName": "ART 2DG3 - Contemporary Approaches to Drawing",
+    "department": "ART",
+    "courseCode": "2DG3",
+    "courseName": "Contemporary Approaches to Drawing"
+  },
+  {
+    "fullName": "ART 2DP3 - Digital Practices",
+    "department": "ART",
+    "courseCode": "2DP3",
+    "courseName": "Digital Practices"
+  },
+  {
+    "fullName": "ART 2ER3 - Environmentally Responsible Art",
+    "department": "ART",
+    "courseCode": "2ER3",
+    "courseName": "Environmentally Responsible Art"
+  },
+  {
+    "fullName": "ART 2IS3 - Independent Studio Methods",
+    "department": "ART",
+    "courseCode": "2IS3",
+    "courseName": "Independent Studio Methods"
+  },
+  {
+    "fullName": "ART 2PG3 - Contemporary Approaches to Painting",
+    "department": "ART",
+    "courseCode": "2PG3",
+    "courseName": "Contemporary Approaches to Painting"
+  },
+  {
+    "fullName": "ART 2PM3 - Contemporary Approaches to Print Media",
+    "department": "ART",
+    "courseCode": "2PM3",
+    "courseName": "Contemporary Approaches to Print Media"
+  },
+  {
+    "fullName": "ART 2SC3 - Contemporary Approaches to Sculpture",
+    "department": "ART",
+    "courseCode": "2SC3",
+    "courseName": "Contemporary Approaches to Sculpture"
+  },
+  {
+    "fullName": "ART 3BA3 - Concentrated Study - Book Arts",
+    "department": "ART",
+    "courseCode": "3BA3",
+    "courseName": "Concentrated Study - Book Arts"
+  },
+  {
+    "fullName": "ART 3CC3 - Concentrated Study - Ceramics",
+    "department": "ART",
+    "courseCode": "3CC3",
+    "courseName": "Concentrated Study - Ceramics"
+  },
+  {
+    "fullName": "ART 3CE3 - Community Exhibitions",
+    "department": "ART",
+    "courseCode": "3CE3",
+    "courseName": "Community Exhibitions"
+  },
+  {
+    "fullName": "ART 3CF3 - Concentrated Study - Foundry",
+    "department": "ART",
+    "courseCode": "3CF3",
+    "courseName": "Concentrated Study - Foundry"
+  },
+  {
+    "fullName": "ART 3CI3 - Concentrated Study - Intaglio",
+    "department": "ART",
+    "courseCode": "3CI3",
+    "courseName": "Concentrated Study - Intaglio"
+  },
+  {
+    "fullName": "ART 3CL3 - Concentrated Study - Lithography",
+    "department": "ART",
+    "courseCode": "3CL3",
+    "courseName": "Concentrated Study - Lithography"
+  },
+  {
+    "fullName": "ART 3D03 - Practical Issues",
+    "department": "ART",
+    "courseCode": "3D03",
+    "courseName": "Practical Issues"
+  },
+  {
+    "fullName": "ART 3FW3 - Field Work: On-Site Explorations",
+    "department": "ART",
+    "courseCode": "3FW3",
+    "courseName": "Field Work: On-Site Explorations"
+  },
+  {
+    "fullName": "ART 3GS6 A/B - Guided Studio Practice",
+    "department": "ART",
+    "courseCode": "3GS6",
+    "courseName": "Guided Studio Practice"
+  },
+  {
+    "fullName": "ART 3ID3 - Integrated Dimensional Media Concentration",
+    "department": "ART",
+    "courseCode": "3ID3",
+    "courseName": "Integrated Dimensional Media Concentration"
+  },
+  {
+    "fullName": "ART 3IM3 - Integrated Media Concentration",
+    "department": "ART",
+    "courseCode": "3IM3",
+    "courseName": "Integrated Media Concentration"
+  },
+  {
+    "fullName": "ART 3IP3 - Media Installation and Performance",
+    "department": "ART",
+    "courseCode": "3IP3",
+    "courseName": "Media Installation and Performance"
+  },
+  {
+    "fullName": "ART 3J03 - Concentrated Study - Collaborative Community Projects",
+    "department": "ART",
+    "courseCode": "3J03",
+    "courseName": "Concentrated Study - Collaborative Community Projects"
+  },
+  {
+    "fullName": "ART 3PB3 - Photography Beyond the Frame",
+    "department": "ART",
+    "courseCode": "3PB3",
+    "courseName": "Photography Beyond the Frame"
+  },
+  {
+    "fullName": "ART 3PD3 - New Directions in Painting/drawing",
+    "department": "ART",
+    "courseCode": "3PD3",
+    "courseName": "New Directions in Painting/drawing"
+  },
+  {
+    "fullName": "ART 4AR3 - Advanced Research and Presentation Strategies",
+    "department": "ART",
+    "courseCode": "4AR3",
+    "courseName": "Advanced Research and Presentation Strategies"
+  },
+  {
+    "fullName": "ART 4AS6 A/B - Advanced Studio Production and Critical Discourse",
+    "department": "ART",
+    "courseCode": "4AS6",
+    "courseName": "Advanced Studio Production and Critical Discourse"
+  },
+  {
+    "fullName": "ART 4CA3 - 20th Century and Contemporary Art Practices: How Artists Think, Act and Engage",
+    "department": "ART",
+    "courseCode": "4CA3",
+    "courseName": "20th Century and Contemporary Art Practices: How Artists Think, Act and Engage"
+  },
+  {
+    "fullName": "ART 4CC3 - Concentrated Study - Ceramics",
+    "department": "ART",
+    "courseCode": "4CC3",
+    "courseName": "Concentrated Study - Ceramics"
+  },
+  {
+    "fullName": "ART 4CI3 - Concentrated Study - Intaglio",
+    "department": "ART",
+    "courseCode": "4CI3",
+    "courseName": "Concentrated Study - Intaglio"
+  },
+  {
+    "fullName": "ART 4CL3 - Concentrated Study - Lithography",
+    "department": "ART",
+    "courseCode": "4CL3",
+    "courseName": "Concentrated Study - Lithography"
+  },
+  {
+    "fullName": "ART 4EP3 - Exhibition Preparation and Documentation",
+    "department": "ART",
+    "courseCode": "4EP3",
+    "courseName": "Exhibition Preparation and Documentation"
+  },
+  {
+    "fullName": "ART 4PR3 - Professional Residency",
+    "department": "ART",
+    "courseCode": "4PR3",
+    "courseName": "Professional Residency"
+  },
+  {
+    "fullName": "ARTHIST 1A03 - World Art and Cultural Heritage I",
+    "department": "ARTHIST",
+    "courseCode": "1A03",
+    "courseName": "World Art and Cultural Heritage I"
+  },
+  {
+    "fullName": "ARTHIST 1AA3 - World Art and Cultural Heritage II",
+    "department": "ARTHIST",
+    "courseCode": "1AA3",
+    "courseName": "World Art and Cultural Heritage II"
+  },
+  {
+    "fullName": "ARTHIST 2A03 - Visual Literacy",
+    "department": "ARTHIST",
+    "courseCode": "2A03",
+    "courseName": "Visual Literacy"
+  },
+  {
+    "fullName": "ARTHIST 2AA3 - Introduction to the Practice of Art Therapy",
+    "department": "ARTHIST",
+    "courseCode": "2AA3",
+    "courseName": "Introduction to the Practice of Art Therapy"
+  },
+  {
+    "fullName": "ARTHIST 2B03 - Greek Art",
+    "department": "ARTHIST",
+    "courseCode": "2B03",
+    "courseName": "Greek Art"
+  },
+  {
+    "fullName": "ARTHIST 2C03 - Roman Art",
+    "department": "ARTHIST",
     "courseCode": "2C03",
-    "courseName": "Exploring Careers in Biomedical Sciences"
+    "courseName": "Roman Art"
   },
   {
-    "fullName": "BIOMEDDC 3A03 - Road to Biomedical Discovery",
-    "department": "BIOMEDDC",
+    "fullName": "ARTHIST 2DF3 - Art and Revolutions in France, 1789-1914",
+    "department": "ARTHIST",
+    "courseCode": "2DF3",
+    "courseName": "Art and Revolutions in France, 1789-1914"
+  },
+  {
+    "fullName": "ARTHIST 2FA3 - Film Analysis",
+    "department": "ARTHIST",
+    "courseCode": "2FA3",
+    "courseName": "Film Analysis"
+  },
+  {
+    "fullName": "ARTHIST 2H03 - Aesthetics",
+    "department": "ARTHIST",
+    "courseCode": "2H03",
+    "courseName": "Aesthetics"
+  },
+  {
+    "fullName": "ARTHIST 2I03 - Renaissance Art",
+    "department": "ARTHIST",
+    "courseCode": "2I03",
+    "courseName": "Renaissance Art"
+  },
+  {
+    "fullName": "ARTHIST 2J03 - Architecture from the Pre-Romanesque to Palladio",
+    "department": "ARTHIST",
+    "courseCode": "2J03",
+    "courseName": "Architecture from the Pre-Romanesque to Palladio"
+  },
+  {
+    "fullName": "ARTHIST 2R03 - The History of Fashion and Identity",
+    "department": "ARTHIST",
+    "courseCode": "2R03",
+    "courseName": "The History of Fashion and Identity"
+  },
+  {
+    "fullName": "ARTHIST 2S03 - The History of Printing and Printmaking",
+    "department": "ARTHIST",
+    "courseCode": "2S03",
+    "courseName": "The History of Printing and Printmaking"
+  },
+  {
+    "fullName": "ARTHIST 2T03 - Art, Theatre and Music in the Enlightenment",
+    "department": "ARTHIST",
+    "courseCode": "2T03",
+    "courseName": "Art, Theatre and Music in the Enlightenment"
+  },
+  {
+    "fullName": "ARTHIST 2Y03 - Early Islamic Art to the Middle Ages",
+    "department": "ARTHIST",
+    "courseCode": "2Y03",
+    "courseName": "Early Islamic Art to the Middle Ages"
+  },
+  {
+    "fullName": "ARTHIST 2Z03 - Art and Visual Culture in East and South Asia",
+    "department": "ARTHIST",
+    "courseCode": "2Z03",
+    "courseName": "Art and Visual Culture in East and South Asia"
+  },
+  {
+    "fullName": "ARTHIST 3AB3 - Applied Art History: Experiential Learning with Placement as an Intern",
+    "department": "ARTHIST",
+    "courseCode": "3AB3",
+    "courseName": "Applied Art History: Experiential Learning with Placement as an Intern"
+  },
+  {
+    "fullName": "ARTHIST 3B03 - Aspects of Canadian Art",
+    "department": "ARTHIST",
+    "courseCode": "3B03",
+    "courseName": "Aspects of Canadian Art"
+  },
+  {
+    "fullName": "ARTHIST 3BB3 - Indigenous Art and Visual Culture in Canada, 1960 to the Present",
+    "department": "ARTHIST",
+    "courseCode": "3BB3",
+    "courseName": "Indigenous Art and Visual Culture in Canada, 1960 to the Present"
+  },
+  {
+    "fullName": "ARTHIST 3D03 - Seventeenth-Century Art",
+    "department": "ARTHIST",
+    "courseCode": "3D03",
+    "courseName": "Seventeenth-Century Art"
+  },
+  {
+    "fullName": "ARTHIST 3DF3 - Art and Politics in Second Empire France",
+    "department": "ARTHIST",
+    "courseCode": "3DF3",
+    "courseName": "Art and Politics in Second Empire France"
+  },
+  {
+    "fullName": "ARTHIST 3FL3 - Early Cinema History",
+    "department": "ARTHIST",
+    "courseCode": "3FL3",
+    "courseName": "Early Cinema History"
+  },
+  {
+    "fullName": "ARTHIST 3H03 - Archaic Greek Art",
+    "department": "ARTHIST",
+    "courseCode": "3H03",
+    "courseName": "Archaic Greek Art"
+  },
+  {
+    "fullName": "ARTHIST 3I03 - Italian Painting and Sculpture 1400-1580",
+    "department": "ARTHIST",
+    "courseCode": "3I03",
+    "courseName": "Italian Painting and Sculpture 1400-1580"
+  },
+  {
+    "fullName": "ARTHIST 3JA3 - The History of Art 1970 to the Present",
+    "department": "ARTHIST",
+    "courseCode": "3JA3",
+    "courseName": "The History of Art 1970 to the Present"
+  },
+  {
+    "fullName": "ARTHIST 3P03 - Issues in Studio Criticism",
+    "department": "ARTHIST",
+    "courseCode": "3P03",
+    "courseName": "Issues in Studio Criticism"
+  },
+  {
+    "fullName": "ARTHIST 3Q03 - Colours of the World",
+    "department": "ARTHIST",
+    "courseCode": "3Q03",
+    "courseName": "Colours of the World"
+  },
+  {
+    "fullName": "ARTHIST 3QQ3 - Greek Sanctuaries",
+    "department": "ARTHIST",
+    "courseCode": "3QQ3",
+    "courseName": "Greek Sanctuaries"
+  },
+  {
+    "fullName": "ARTHIST 3SS3 - Pompeii, Herculaneum, and Ostia",
+    "department": "ARTHIST",
+    "courseCode": "3SS3",
+    "courseName": "Pompeii, Herculaneum, and Ostia"
+  },
+  {
+    "fullName": "ARTHIST 3XX3 - Cinema History from WWII",
+    "department": "ARTHIST",
+    "courseCode": "3XX3",
+    "courseName": "Cinema History from WWII"
+  },
+  {
+    "fullName": "ARTHIST 3Z03 - The Silk Road in the First Millennium",
+    "department": "ARTHIST",
+    "courseCode": "3Z03",
+    "courseName": "The Silk Road in the First Millennium"
+  },
+  {
+    "fullName": "ARTHIST 4AA3 - Seminar in Contemporary Art and Visual Culture",
+    "department": "ARTHIST",
+    "courseCode": "4AA3",
+    "courseName": "Seminar in Contemporary Art and Visual Culture"
+  },
+  {
+    "fullName": "ARTHIST 4BB3 - Seminar in Ancient Art",
+    "department": "ARTHIST",
+    "courseCode": "4BB3",
+    "courseName": "Seminar in Ancient Art"
+  },
+  {
+    "fullName": "ARTHIST 4C03 - Seminar in Art and Visual Culture 900-1400",
+    "department": "ARTHIST",
+    "courseCode": "4C03",
+    "courseName": "Seminar in Art and Visual Culture 900-1400"
+  },
+  {
+    "fullName": "ARTHIST 4CA3 - 20th Century and Contemporary Art Practices: How Artists Think, Act and Engage",
+    "department": "ARTHIST",
+    "courseCode": "4CA3",
+    "courseName": "20th Century and Contemporary Art Practices: How Artists Think, Act and Engage"
+  },
+  {
+    "fullName": "ARTHIST 4E03 - Seminar in Art and Visual Culture 1400 - 1750",
+    "department": "ARTHIST",
+    "courseCode": "4E03",
+    "courseName": "Seminar in Art and Visual Culture 1400 - 1750"
+  },
+  {
+    "fullName": "ARTHIST 4H03 - Seminar in Art and Visual Culture 1750 to the Present",
+    "department": "ARTHIST",
+    "courseCode": "4H03",
+    "courseName": "Seminar in Art and Visual Culture 1750 to the Present"
+  },
+  {
+    "fullName": "ARTHIST 4LP3 - The Cultural History of Paris, 1789-1914",
+    "department": "ARTHIST",
+    "courseCode": "4LP3",
+    "courseName": "The Cultural History of Paris, 1789-1914"
+  },
+  {
+    "fullName": "ARTHIST 4O06 A/B - Thesis",
+    "department": "ARTHIST",
+    "courseCode": "4O06",
+    "courseName": "Thesis"
+  },
+  {
+    "fullName": "ARTHIST 4U03 - The Severe Style in Greek Art",
+    "department": "ARTHIST",
+    "courseCode": "4U03",
+    "courseName": "The Severe Style in Greek Art"
+  },
+  {
+    "fullName": "ARTHIST 4V03 - The Study, Criticism and Evaluation of Art",
+    "department": "ARTHIST",
+    "courseCode": "4V03",
+    "courseName": "The Study, Criticism and Evaluation of Art"
+  },
+  {
+    "fullName": "ARTHIST 4X03 - Introduction to Art Galleries and Museums",
+    "department": "ARTHIST",
+    "courseCode": "4X03",
+    "courseName": "Introduction to Art Galleries and Museums"
+  },
+  {
+    "fullName": "ARTSSCI 1A06 A/B - Practices of Knowledge",
+    "department": "ARTSSCI",
+    "courseCode": "1A06",
+    "courseName": "Practices of Knowledge"
+  },
+  {
+    "fullName": "ARTSSCI 1B03 - Writing",
+    "department": "ARTSSCI",
+    "courseCode": "1B03",
+    "courseName": "Writing"
+  },
+  {
+    "fullName": "ARTSSCI 1BB3 - Argumentation",
+    "department": "ARTSSCI",
+    "courseCode": "1BB3",
+    "courseName": "Argumentation"
+  },
+  {
+    "fullName": "ARTSSCI 1C03 - Inquiry: Global Challenges",
+    "department": "ARTSSCI",
+    "courseCode": "1C03",
+    "courseName": "Inquiry: Global Challenges"
+  },
+  {
+    "fullName": "ARTSSCI 1CC3 - Contemporary Indigenous Studies",
+    "department": "ARTSSCI",
+    "courseCode": "1CC3",
+    "courseName": "Contemporary Indigenous Studies"
+  },
+  {
+    "fullName": "ARTSSCI 1D06 A/B - Calculus",
+    "department": "ARTSSCI",
+    "courseCode": "1D06",
+    "courseName": "Calculus"
+  },
+  {
+    "fullName": "ARTSSCI 2A06 A/B - Social and Political Thought",
+    "department": "ARTSSCI",
+    "courseCode": "2A06",
+    "courseName": "Social and Political Thought"
+  },
+  {
+    "fullName": "ARTSSCI 2D06 A/B - Physics",
+    "department": "ARTSSCI",
+    "courseCode": "2D06",
+    "courseName": "Physics"
+  },
+  {
+    "fullName": "ARTSSCI 2E03 - Economics: Principles and Policy",
+    "department": "ARTSSCI",
+    "courseCode": "2E03",
+    "courseName": "Economics: Principles and Policy"
+  },
+  {
+    "fullName": "ARTSSCI 2R03 - Applied Statistical Inference",
+    "department": "ARTSSCI",
+    "courseCode": "2R03",
+    "courseName": "Applied Statistical Inference"
+  },
+  {
+    "fullName": "ARTSSCI 3A06 A/B - Literature",
+    "department": "ARTSSCI",
+    "courseCode": "3A06",
+    "courseName": "Literature"
+  },
+  {
+    "fullName": "ARTSSCI 3B03 - Technology and Society I",
+    "department": "ARTSSCI",
+    "courseCode": "3B03",
+    "courseName": "Technology and Society I"
+  },
+  {
+    "fullName": "ARTSSCI 3BB3 - Technology and Society II",
+    "department": "ARTSSCI",
+    "courseCode": "3BB3",
+    "courseName": "Technology and Society II"
+  },
+  {
+    "fullName": "ARTSSCI 3BC3 - Technology and Society III",
+    "department": "ARTSSCI",
+    "courseCode": "3BC3",
+    "courseName": "Technology and Society III"
+  },
+  {
+    "fullName": "ARTSSCI 3CL3 - Theatre, Self, and Social Development",
+    "department": "ARTSSCI",
+    "courseCode": "3CL3",
+    "courseName": "Theatre, Self, and Social Development"
+  },
+  {
+    "fullName": "ARTSSCI 3CU3 - Alumni Experience Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "3CU3",
+    "courseName": "Alumni Experience Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 3EH3 - Exploring Hamilton Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "3EH3",
+    "courseName": "Exploring Hamilton Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 3F03 - Experiential Project in Teaching and Learning",
+    "department": "ARTSSCI",
+    "courseCode": "3F03",
+    "courseName": "Experiential Project in Teaching and Learning"
+  },
+  {
+    "fullName": "ARTSSCI 3GJ3 - Global Justice Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "3GJ3",
+    "courseName": "Global Justice Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 3L03 - The Indian Religious Tradition",
+    "department": "ARTSSCI",
+    "courseCode": "3L03",
+    "courseName": "The Indian Religious Tradition"
+  },
+  {
+    "fullName": "ARTSSCI 3S03 - The East Asian Religious Tradition",
+    "department": "ARTSSCI",
+    "courseCode": "3S03",
+    "courseName": "The East Asian Religious Tradition"
+  },
+  {
+    "fullName": "ARTSSCI 3TR3 - Trees Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "3TR3",
+    "courseName": "Trees Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 3X03 - Individual Study",
+    "department": "ARTSSCI",
+    "courseCode": "3X03",
+    "courseName": "Individual Study"
+  },
+  {
+    "fullName": "ARTSSCI 4A06 A/B - Individual Study",
+    "department": "ARTSSCI",
+    "courseCode": "4A06",
+    "courseName": "Individual Study"
+  },
+  {
+    "fullName": "ARTSSCI 4A09 A/B - Individual Study",
+    "department": "ARTSSCI",
+    "courseCode": "4A09",
+    "courseName": "Individual Study"
+  },
+  {
+    "fullName": "ARTSSCI 4BP3 - Bodies and Bodies Politic: From Public Health to Global Health",
+    "department": "ARTSSCI",
+    "courseCode": "4BP3",
+    "courseName": "Bodies and Bodies Politic: From Public Health to Global Health"
+  },
+  {
+    "fullName": "ARTSSCI 4C06 A/B - Thesis",
+    "department": "ARTSSCI",
+    "courseCode": "4C06",
+    "courseName": "Thesis"
+  },
+  {
+    "fullName": "ARTSSCI 4C09 A/B - Thesis",
+    "department": "ARTSSCI",
+    "courseCode": "4C09",
+    "courseName": "Thesis"
+  },
+  {
+    "fullName": "ARTSSCI 4CA3 - Legal Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4CA3",
+    "courseName": "Legal Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4CB3 - Education Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4CB3",
+    "courseName": "Education Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4CD3 - Research and Creative Writing",
+    "department": "ARTSSCI",
+    "courseCode": "4CD3",
+    "courseName": "Research and Creative Writing"
+  },
+  {
+    "fullName": "ARTSSCI 4CF3 - How Science Speaks to Power",
+    "department": "ARTSSCI",
+    "courseCode": "4CF3",
+    "courseName": "How Science Speaks to Power"
+  },
+  {
+    "fullName": "ARTSSCI 4CI3 - Diversity and Human Rights Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4CI3",
+    "courseName": "Diversity and Human Rights Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4CP3 - Media Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4CP3",
+    "courseName": "Media Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4CT3 - Medical Humanities Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4CT3",
+    "courseName": "Medical Humanities Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4EP3 - Environmental Policy Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4EP3",
+    "courseName": "Environmental Policy Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4HS3 - History of Science Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4HS3",
+    "courseName": "History of Science Inquiry"
+  },
+  {
+    "fullName": "ARTSSCI 4MN1 - Local Explorations",
+    "department": "ARTSSCI",
+    "courseCode": "4MN1",
+    "courseName": "Local Explorations"
+  },
+  {
+    "fullName": "ARTSSCI 4MN2 - Movement and Integration",
+    "department": "ARTSSCI",
+    "courseCode": "4MN2",
+    "courseName": "Movement and Integration"
+  },
+  {
+    "fullName": "ARTSSCI 4VC3 - Visual Culture Inquiry",
+    "department": "ARTSSCI",
+    "courseCode": "4VC3",
+    "courseName": "Visual Culture Inquiry"
+  },
+  {
+    "fullName": "ASTRON 1F03 - Introduction to Astronomy and Astrophysics",
+    "department": "ASTRON",
+    "courseCode": "1F03",
+    "courseName": "Introduction to Astronomy and Astrophysics"
+  },
+  {
+    "fullName": "ASTRON 2B03 - The Big Questions",
+    "department": "ASTRON",
+    "courseCode": "2B03",
+    "courseName": "The Big Questions"
+  },
+  {
+    "fullName": "ASTRON 2E03 - Planetary Astronomy",
+    "department": "ASTRON",
+    "courseCode": "2E03",
+    "courseName": "Planetary Astronomy"
+  },
+  {
+    "fullName": "ASTRON 3X03 - Galaxies and Cosmology",
+    "department": "ASTRON",
+    "courseCode": "3X03",
+    "courseName": "Galaxies and Cosmology"
+  },
+  {
+    "fullName": "ASTRON 3Y03 - Stellar Structure",
+    "department": "ASTRON",
+    "courseCode": "3Y03",
+    "courseName": "Stellar Structure"
+  },
+  {
+    "fullName": "ASTRON 4X03 - Astrophysics Data Analysis Project Course",
+    "department": "ASTRON",
+    "courseCode": "4X03",
+    "courseName": "Astrophysics Data Analysis Project Course"
+  },
+  {
+    "fullName": "AUTOTECH 2AC3 - Advanced CAD",
+    "department": "AUTOTECH",
+    "courseCode": "2AC3",
+    "courseName": "Advanced CAD"
+  },
+  {
+    "fullName": "AUTOTECH 2AE3 - Design of Machine Elements",
+    "department": "AUTOTECH",
+    "courseCode": "2AE3",
+    "courseName": "Design of Machine Elements"
+  },
+  {
+    "fullName": "AUTOTECH 2CD3 - Computer Aided Design",
+    "department": "AUTOTECH",
+    "courseCode": "2CD3",
+    "courseName": "Computer Aided Design"
+  },
+  {
+    "fullName": "AUTOTECH 2MT3 - Structure and Properties of Materials",
+    "department": "AUTOTECH",
+    "courseCode": "2MT3",
+    "courseName": "Structure and Properties of Materials"
+  },
+  {
+    "fullName": "AUTOTECH 2TS3 - Thermodynamics and Heat Transfer",
+    "department": "AUTOTECH",
+    "courseCode": "2TS3",
+    "courseName": "Thermodynamics and Heat Transfer"
+  },
+  {
+    "fullName": "AUTOTECH 3AE3 - Automotive Engineering Technology",
+    "department": "AUTOTECH",
+    "courseCode": "3AE3",
+    "courseName": "Automotive Engineering Technology"
+  },
+  {
+    "fullName": "AUTOTECH 3AV3 - Electric and Hybrid Vehicles",
+    "department": "AUTOTECH",
+    "courseCode": "3AV3",
+    "courseName": "Electric and Hybrid Vehicles"
+  },
+  {
+    "fullName": "AUTOTECH 3CT3 - Control Theory",
+    "department": "AUTOTECH",
+    "courseCode": "3CT3",
+    "courseName": "Control Theory"
+  },
+  {
+    "fullName": "AUTOTECH 3MP3 - Manufacturing Processes and Systems",
+    "department": "AUTOTECH",
+    "courseCode": "3MP3",
+    "courseName": "Manufacturing Processes and Systems"
+  },
+  {
+    "fullName": "AUTOTECH 3MV3 - Mechatronics",
+    "department": "AUTOTECH",
+    "courseCode": "3MV3",
+    "courseName": "Mechatronics"
+  },
+  {
+    "fullName": "AUTOTECH 3TS3 - Fluid Mechanics",
+    "department": "AUTOTECH",
+    "courseCode": "3TS3",
+    "courseName": "Fluid Mechanics"
+  },
+  {
+    "fullName": "AUTOTECH 3VD3 - Mechanical Vibrations",
+    "department": "AUTOTECH",
+    "courseCode": "3VD3",
+    "courseName": "Mechanical Vibrations"
+  },
+  {
+    "fullName": "AUTOTECH 4AE3 - Internal Combustion Engines",
+    "department": "AUTOTECH",
+    "courseCode": "4AE3",
+    "courseName": "Internal Combustion Engines"
+  },
+  {
+    "fullName": "AUTOTECH 4AT3 - Conceptual Design of Electric and Hybrid Vehicles",
+    "department": "AUTOTECH",
+    "courseCode": "4AT3",
+    "courseName": "Conceptual Design of Electric and Hybrid Vehicles"
+  },
+  {
+    "fullName": "AUTOTECH 4CI3 - Robotics and Computer Integrated Manufacturing",
+    "department": "AUTOTECH",
+    "courseCode": "4CI3",
+    "courseName": "Robotics and Computer Integrated Manufacturing"
+  },
+  {
+    "fullName": "AUTOTECH 4DV3 - Vehicle Dynamics",
+    "department": "AUTOTECH",
+    "courseCode": "4DV3",
+    "courseName": "Vehicle Dynamics"
+  },
+  {
+    "fullName": "AUTOTECH 4EC3 - Electrical and Electronics Control Systems",
+    "department": "AUTOTECH",
+    "courseCode": "4EC3",
+    "courseName": "Electrical and Electronics Control Systems"
+  },
+  {
+    "fullName": "AUTOTECH 4MS3 - Kinematic and Dynamic Modelling and Simulation",
+    "department": "AUTOTECH",
+    "courseCode": "4MS3",
+    "courseName": "Kinematic and Dynamic Modelling and Simulation"
+  },
+  {
+    "fullName": "AUTOTECH 4TR1 - Capstone Design I",
+    "department": "AUTOTECH",
+    "courseCode": "4TR1",
+    "courseName": "Capstone Design I"
+  },
+  {
+    "fullName": "AUTOTECH 4TR3 - Capstone Design II",
+    "department": "AUTOTECH",
+    "courseCode": "4TR3",
+    "courseName": "Capstone Design II"
+  },
+  {
+    "fullName": "BIOCHEM 2B03 - Nucleic Acid Structure and Function",
+    "department": "BIOCHEM",
+    "courseCode": "2B03",
+    "courseName": "Nucleic Acid Structure and Function"
+  },
+  {
+    "fullName": "BIOCHEM 2BB3 - Protein Structure and Enzyme Function",
+    "department": "BIOCHEM",
+    "courseCode": "2BB3",
+    "courseName": "Protein Structure and Enzyme Function"
+  },
+  {
+    "fullName": "BIOCHEM 2EE3 - Metabolism and Physiological Chemistry",
+    "department": "BIOCHEM",
+    "courseCode": "2EE3",
+    "courseName": "Metabolism and Physiological Chemistry"
+  },
+  {
+    "fullName": "BIOCHEM 2L06 A/B - Inquiry in Biochemical Techniques",
+    "department": "BIOCHEM",
+    "courseCode": "2L06",
+    "courseName": "Inquiry in Biochemical Techniques"
+  },
+  {
+    "fullName": "BIOCHEM 3A03 - Biochemical Research Practice",
+    "department": "BIOCHEM",
     "courseCode": "3A03",
-    "courseName": "Road to Biomedical Discovery"
+    "courseName": "Biochemical Research Practice"
   },
   {
-    "fullName": "BIOMEDDC 3B06 A/B - Drug Discovery and Development",
-    "department": "BIOMEDDC",
-    "courseCode": "3B06",
-    "courseName": "Drug Discovery and Development"
+    "fullName": "BIOCHEM 3BP3 - Practical Bioinformatics in the Genomics Era",
+    "department": "BIOCHEM",
+    "courseCode": "3BP3",
+    "courseName": "Practical Bioinformatics in the Genomics Era"
   },
   {
-    "fullName": "BIOMEDDC 3C09 A/B - Research Skills Laboratory and Inquiry",
-    "department": "BIOMEDDC",
-    "courseCode": "3C09",
-    "courseName": "Research Skills Laboratory and Inquiry"
+    "fullName": "BIOCHEM 3D03 - Metabolism and Regulation",
+    "department": "BIOCHEM",
+    "courseCode": "3D03",
+    "courseName": "Metabolism and Regulation"
   },
   {
-    "fullName": "BIOMEDDC 4A15 A/B - Senior Research Thesis",
-    "department": "BIOMEDDC",
-    "courseCode": "4A15",
-    "courseName": "Senior Research Thesis"
+    "fullName": "BIOCHEM 3EE3 - Research Advances in Cell Biology and Biochemistry",
+    "department": "BIOCHEM",
+    "courseCode": "3EE3",
+    "courseName": "Research Advances in Cell Biology and Biochemistry"
   },
   {
-    "fullName": "BIOMEDDC 4B03 - Road to Biomedical Commercialization",
-    "department": "BIOMEDDC",
-    "courseCode": "4B03",
-    "courseName": "Road to Biomedical Commercialization"
+    "fullName": "BIOCHEM 3G03 - Proteins and Nucleic Acids",
+    "department": "BIOCHEM",
+    "courseCode": "3G03",
+    "courseName": "Proteins and Nucleic Acids"
+  },
+  {
+    "fullName": "BIOCHEM 3H03 - Clinical Biochemistry",
+    "department": "BIOCHEM",
+    "courseCode": "3H03",
+    "courseName": "Clinical Biochemistry"
+  },
+  {
+    "fullName": "BIOCHEM 3LA3 - Advanced Biochemistry Techniques",
+    "department": "BIOCHEM",
+    "courseCode": "3LA3",
+    "courseName": "Advanced Biochemistry Techniques"
+  },
+  {
+    "fullName": "BIOCHEM 3MI3 - Microbial Interactions",
+    "department": "BIOCHEM",
+    "courseCode": "3MI3",
+    "courseName": "Microbial Interactions"
+  },
+  {
+    "fullName": "BIOCHEM 3R06 A/B S - Research Project",
+    "department": "BIOCHEM",
+    "courseCode": "3R06",
+    "courseName": "Research Project"
+  },
+  {
+    "fullName": "BIOCHEM 3Z03 - Structural Determination and Analysis of Macromolecules",
+    "department": "BIOCHEM",
+    "courseCode": "3Z03",
+    "courseName": "Structural Determination and Analysis of Macromolecules"
+  },
+  {
+    "fullName": "BIOCHEM 4C03 - Inquiry in Biochemistry",
+    "department": "BIOCHEM",
+    "courseCode": "4C03",
+    "courseName": "Inquiry in Biochemistry"
+  },
+  {
+    "fullName": "BIOCHEM 4E03 - Gene Regulation in Stem Cells and Development",
+    "department": "BIOCHEM",
+    "courseCode": "4E03",
+    "courseName": "Gene Regulation in Stem Cells and Development"
+  },
+  {
+    "fullName": "BIOCHEM 4F09 A/B - Senior Thesis",
+    "department": "BIOCHEM",
+    "courseCode": "4F09",
+    "courseName": "Senior Thesis"
+  },
+  {
+    "fullName": "BIOCHEM 4H03 - Biotechnology and Drug Discovery",
+    "department": "BIOCHEM",
+    "courseCode": "4H03",
+    "courseName": "Biotechnology and Drug Discovery"
+  },
+  {
+    "fullName": "BIOCHEM 4J03 - Immunological Principles in Practice",
+    "department": "BIOCHEM",
+    "courseCode": "4J03",
+    "courseName": "Immunological Principles in Practice"
+  },
+  {
+    "fullName": "BIOCHEM 4M03 - Cellular and Integrated Metabolism",
+    "department": "BIOCHEM",
+    "courseCode": "4M03",
+    "courseName": "Cellular and Integrated Metabolism"
+  },
+  {
+    "fullName": "BIOCHEM 4N03 - Molecular Membrane Biology",
+    "department": "BIOCHEM",
+    "courseCode": "4N03",
+    "courseName": "Molecular Membrane Biology"
+  },
+  {
+    "fullName": "BIOCHEM 4Q03 - Biochemical Pharmacology",
+    "department": "BIOCHEM",
+    "courseCode": "4Q03",
+    "courseName": "Biochemical Pharmacology"
+  },
+  {
+    "fullName": "BIOCHEM 4S03 - Introduction to Molecular Biophysics",
+    "department": "BIOCHEM",
+    "courseCode": "4S03",
+    "courseName": "Introduction to Molecular Biophysics"
+  },
+  {
+    "fullName": "BIOCHEM 4T15 A/B - Senior Thesis",
+    "department": "BIOCHEM",
+    "courseCode": "4T15",
+    "courseName": "Senior Thesis"
+  },
+  {
+    "fullName": "BIOCHEM 4Z03 - Senior Project",
+    "department": "BIOCHEM",
+    "courseCode": "4Z03",
+    "courseName": "Senior Project"
   },
   {
     "fullName": "BIOLOGY 1A03 - Cellular and Molecular Biology",
@@ -798,514 +1782,40 @@
     "courseName": "Environmental Physiology"
   },
   {
-    "fullName": "ARTHIST 1A03 - World Art and Cultural Heritage I",
-    "department": "ARTHIST",
-    "courseCode": "1A03",
-    "courseName": "World Art and Cultural Heritage I"
-  },
-  {
-    "fullName": "ARTHIST 1AA3 - World Art and Cultural Heritage II",
-    "department": "ARTHIST",
-    "courseCode": "1AA3",
-    "courseName": "World Art and Cultural Heritage II"
-  },
-  {
-    "fullName": "ARTHIST 2A03 - Visual Literacy",
-    "department": "ARTHIST",
-    "courseCode": "2A03",
-    "courseName": "Visual Literacy"
-  },
-  {
-    "fullName": "ARTHIST 2AA3 - Introduction to the Practice of Art Therapy",
-    "department": "ARTHIST",
-    "courseCode": "2AA3",
-    "courseName": "Introduction to the Practice of Art Therapy"
-  },
-  {
-    "fullName": "ARTHIST 2B03 - Greek Art",
-    "department": "ARTHIST",
-    "courseCode": "2B03",
-    "courseName": "Greek Art"
-  },
-  {
-    "fullName": "ARTHIST 2C03 - Roman Art",
-    "department": "ARTHIST",
+    "fullName": "BIOMEDDC 2C03 - Exploring Careers in Biomedical Sciences",
+    "department": "BIOMEDDC",
     "courseCode": "2C03",
-    "courseName": "Roman Art"
+    "courseName": "Exploring Careers in Biomedical Sciences"
   },
   {
-    "fullName": "ARTHIST 2DF3 - Art and Revolutions in France, 1789-1914",
-    "department": "ARTHIST",
-    "courseCode": "2DF3",
-    "courseName": "Art and Revolutions in France, 1789-1914"
+    "fullName": "BIOMEDDC 3A03 - Road to Biomedical Discovery",
+    "department": "BIOMEDDC",
+    "courseCode": "3A03",
+    "courseName": "Road to Biomedical Discovery"
   },
   {
-    "fullName": "ARTHIST 2FA3 - Film Analysis",
-    "department": "ARTHIST",
-    "courseCode": "2FA3",
-    "courseName": "Film Analysis"
+    "fullName": "BIOMEDDC 3B06 A/B - Drug Discovery and Development",
+    "department": "BIOMEDDC",
+    "courseCode": "3B06",
+    "courseName": "Drug Discovery and Development"
   },
   {
-    "fullName": "ARTHIST 2H03 - Aesthetics",
-    "department": "ARTHIST",
-    "courseCode": "2H03",
-    "courseName": "Aesthetics"
+    "fullName": "BIOMEDDC 3C09 A/B - Research Skills Laboratory and Inquiry",
+    "department": "BIOMEDDC",
+    "courseCode": "3C09",
+    "courseName": "Research Skills Laboratory and Inquiry"
   },
   {
-    "fullName": "ARTHIST 2I03 - Renaissance Art",
-    "department": "ARTHIST",
-    "courseCode": "2I03",
-    "courseName": "Renaissance Art"
+    "fullName": "BIOMEDDC 4A15 A/B - Senior Research Thesis",
+    "department": "BIOMEDDC",
+    "courseCode": "4A15",
+    "courseName": "Senior Research Thesis"
   },
   {
-    "fullName": "ARTHIST 2J03 - Architecture from the Pre-Romanesque to Palladio",
-    "department": "ARTHIST",
-    "courseCode": "2J03",
-    "courseName": "Architecture from the Pre-Romanesque to Palladio"
-  },
-  {
-    "fullName": "ARTHIST 2R03 - The History of Fashion and Identity",
-    "department": "ARTHIST",
-    "courseCode": "2R03",
-    "courseName": "The History of Fashion and Identity"
-  },
-  {
-    "fullName": "ARTHIST 2S03 - The History of Printing and Printmaking",
-    "department": "ARTHIST",
-    "courseCode": "2S03",
-    "courseName": "The History of Printing and Printmaking"
-  },
-  {
-    "fullName": "ARTHIST 2T03 - Art, Theatre and Music in the Enlightenment",
-    "department": "ARTHIST",
-    "courseCode": "2T03",
-    "courseName": "Art, Theatre and Music in the Enlightenment"
-  },
-  {
-    "fullName": "ARTHIST 2Y03 - Early Islamic Art to the Middle Ages",
-    "department": "ARTHIST",
-    "courseCode": "2Y03",
-    "courseName": "Early Islamic Art to the Middle Ages"
-  },
-  {
-    "fullName": "ARTHIST 2Z03 - Art and Visual Culture in East and South Asia",
-    "department": "ARTHIST",
-    "courseCode": "2Z03",
-    "courseName": "Art and Visual Culture in East and South Asia"
-  },
-  {
-    "fullName": "ARTHIST 3AB3 - Applied Art History: Experiential Learning with Placement as an Intern",
-    "department": "ARTHIST",
-    "courseCode": "3AB3",
-    "courseName": "Applied Art History: Experiential Learning with Placement as an Intern"
-  },
-  {
-    "fullName": "ARTHIST 3B03 - Aspects of Canadian Art",
-    "department": "ARTHIST",
-    "courseCode": "3B03",
-    "courseName": "Aspects of Canadian Art"
-  },
-  {
-    "fullName": "ARTHIST 3BB3 - Indigenous Art and Visual Culture in Canada, 1960 to the Present",
-    "department": "ARTHIST",
-    "courseCode": "3BB3",
-    "courseName": "Indigenous Art and Visual Culture in Canada, 1960 to the Present"
-  },
-  {
-    "fullName": "ARTHIST 3D03 - Seventeenth-Century Art",
-    "department": "ARTHIST",
-    "courseCode": "3D03",
-    "courseName": "Seventeenth-Century Art"
-  },
-  {
-    "fullName": "ARTHIST 3DF3 - Art and Politics in Second Empire France",
-    "department": "ARTHIST",
-    "courseCode": "3DF3",
-    "courseName": "Art and Politics in Second Empire France"
-  },
-  {
-    "fullName": "ARTHIST 3FL3 - Early Cinema History",
-    "department": "ARTHIST",
-    "courseCode": "3FL3",
-    "courseName": "Early Cinema History"
-  },
-  {
-    "fullName": "ARTHIST 3H03 - Archaic Greek Art",
-    "department": "ARTHIST",
-    "courseCode": "3H03",
-    "courseName": "Archaic Greek Art"
-  },
-  {
-    "fullName": "ARTHIST 3I03 - Italian Painting and Sculpture 1400-1580",
-    "department": "ARTHIST",
-    "courseCode": "3I03",
-    "courseName": "Italian Painting and Sculpture 1400-1580"
-  },
-  {
-    "fullName": "ARTHIST 3JA3 - The History of Art 1970 to the Present",
-    "department": "ARTHIST",
-    "courseCode": "3JA3",
-    "courseName": "The History of Art 1970 to the Present"
-  },
-  {
-    "fullName": "ARTHIST 3P03 - Issues in Studio Criticism",
-    "department": "ARTHIST",
-    "courseCode": "3P03",
-    "courseName": "Issues in Studio Criticism"
-  },
-  {
-    "fullName": "ARTHIST 3Q03 - Colours of the World",
-    "department": "ARTHIST",
-    "courseCode": "3Q03",
-    "courseName": "Colours of the World"
-  },
-  {
-    "fullName": "ARTHIST 3QQ3 - Greek Sanctuaries",
-    "department": "ARTHIST",
-    "courseCode": "3QQ3",
-    "courseName": "Greek Sanctuaries"
-  },
-  {
-    "fullName": "ARTHIST 3SS3 - Pompeii, Herculaneum, and Ostia",
-    "department": "ARTHIST",
-    "courseCode": "3SS3",
-    "courseName": "Pompeii, Herculaneum, and Ostia"
-  },
-  {
-    "fullName": "ARTHIST 3XX3 - Cinema History from WWII",
-    "department": "ARTHIST",
-    "courseCode": "3XX3",
-    "courseName": "Cinema History from WWII"
-  },
-  {
-    "fullName": "ARTHIST 3Z03 - The Silk Road in the First Millennium",
-    "department": "ARTHIST",
-    "courseCode": "3Z03",
-    "courseName": "The Silk Road in the First Millennium"
-  },
-  {
-    "fullName": "ARTHIST 4AA3 - Seminar in Contemporary Art and Visual Culture",
-    "department": "ARTHIST",
-    "courseCode": "4AA3",
-    "courseName": "Seminar in Contemporary Art and Visual Culture"
-  },
-  {
-    "fullName": "ARTHIST 4BB3 - Seminar in Ancient Art",
-    "department": "ARTHIST",
-    "courseCode": "4BB3",
-    "courseName": "Seminar in Ancient Art"
-  },
-  {
-    "fullName": "ARTHIST 4C03 - Seminar in Art and Visual Culture 900-1400",
-    "department": "ARTHIST",
-    "courseCode": "4C03",
-    "courseName": "Seminar in Art and Visual Culture 900-1400"
-  },
-  {
-    "fullName": "ARTHIST 4CA3 - 20th Century and Contemporary Art Practices: How Artists Think, Act and Engage",
-    "department": "ARTHIST",
-    "courseCode": "4CA3",
-    "courseName": "20th Century and Contemporary Art Practices: How Artists Think, Act and Engage"
-  },
-  {
-    "fullName": "ARTHIST 4E03 - Seminar in Art and Visual Culture 1400 - 1750",
-    "department": "ARTHIST",
-    "courseCode": "4E03",
-    "courseName": "Seminar in Art and Visual Culture 1400 - 1750"
-  },
-  {
-    "fullName": "ARTHIST 4H03 - Seminar in Art and Visual Culture 1750 to the Present",
-    "department": "ARTHIST",
-    "courseCode": "4H03",
-    "courseName": "Seminar in Art and Visual Culture 1750 to the Present"
-  },
-  {
-    "fullName": "ARTHIST 4LP3 - The Cultural History of Paris, 1789-1914",
-    "department": "ARTHIST",
-    "courseCode": "4LP3",
-    "courseName": "The Cultural History of Paris, 1789-1914"
-  },
-  {
-    "fullName": "ARTHIST 4O06 A/B - Thesis",
-    "department": "ARTHIST",
-    "courseCode": "4O06",
-    "courseName": "Thesis"
-  },
-  {
-    "fullName": "ARTHIST 4U03 - The Severe Style in Greek Art",
-    "department": "ARTHIST",
-    "courseCode": "4U03",
-    "courseName": "The Severe Style in Greek Art"
-  },
-  {
-    "fullName": "ARTHIST 4V03 - The Study, Criticism and Evaluation of Art",
-    "department": "ARTHIST",
-    "courseCode": "4V03",
-    "courseName": "The Study, Criticism and Evaluation of Art"
-  },
-  {
-    "fullName": "ARTHIST 4X03 - Introduction to Art Galleries and Museums",
-    "department": "ARTHIST",
-    "courseCode": "4X03",
-    "courseName": "Introduction to Art Galleries and Museums"
-  },
-  {
-    "fullName": "ART 1DM3 - Dimensional Material Investigations and Concepts",
-    "department": "ART",
-    "courseCode": "1DM3",
-    "courseName": "Dimensional Material Investigations and Concepts"
-  },
-  {
-    "fullName": "ART 1MI3 - Material Investigations and Concepts",
-    "department": "ART",
-    "courseCode": "1MI3",
-    "courseName": "Material Investigations and Concepts"
-  },
-  {
-    "fullName": "ART 1OS3 - Observational Studies",
-    "department": "ART",
-    "courseCode": "1OS3",
-    "courseName": "Observational Studies"
-  },
-  {
-    "fullName": "ART 1SI3 - Studio Investigations",
-    "department": "ART",
-    "courseCode": "1SI3",
-    "courseName": "Studio Investigations"
-  },
-  {
-    "fullName": "ART 1TI3 - Making Art and Understanding Technology & Images",
-    "department": "ART",
-    "courseCode": "1TI3",
-    "courseName": "Making Art and Understanding Technology & Images"
-  },
-  {
-    "fullName": "ART 1UI3 - Making Art and Understanding Images",
-    "department": "ART",
-    "courseCode": "1UI3",
-    "courseName": "Making Art and Understanding Images"
-  },
-  {
-    "fullName": "ART 2AT3 - Art Today",
-    "department": "ART",
-    "courseCode": "2AT3",
-    "courseName": "Art Today"
-  },
-  {
-    "fullName": "ART 2DG3 - Contemporary Approaches to Drawing",
-    "department": "ART",
-    "courseCode": "2DG3",
-    "courseName": "Contemporary Approaches to Drawing"
-  },
-  {
-    "fullName": "ART 2DP3 - Digital Practices",
-    "department": "ART",
-    "courseCode": "2DP3",
-    "courseName": "Digital Practices"
-  },
-  {
-    "fullName": "ART 2ER3 - Environmentally Responsible Art",
-    "department": "ART",
-    "courseCode": "2ER3",
-    "courseName": "Environmentally Responsible Art"
-  },
-  {
-    "fullName": "ART 2IS3 - Independent Studio Methods",
-    "department": "ART",
-    "courseCode": "2IS3",
-    "courseName": "Independent Studio Methods"
-  },
-  {
-    "fullName": "ART 2PG3 - Contemporary Approaches to Painting",
-    "department": "ART",
-    "courseCode": "2PG3",
-    "courseName": "Contemporary Approaches to Painting"
-  },
-  {
-    "fullName": "ART 2PM3 - Contemporary Approaches to Print Media",
-    "department": "ART",
-    "courseCode": "2PM3",
-    "courseName": "Contemporary Approaches to Print Media"
-  },
-  {
-    "fullName": "ART 2SC3 - Contemporary Approaches to Sculpture",
-    "department": "ART",
-    "courseCode": "2SC3",
-    "courseName": "Contemporary Approaches to Sculpture"
-  },
-  {
-    "fullName": "ART 3BA3 - Concentrated Study - Book Arts",
-    "department": "ART",
-    "courseCode": "3BA3",
-    "courseName": "Concentrated Study - Book Arts"
-  },
-  {
-    "fullName": "ART 3CC3 - Concentrated Study - Ceramics",
-    "department": "ART",
-    "courseCode": "3CC3",
-    "courseName": "Concentrated Study - Ceramics"
-  },
-  {
-    "fullName": "ART 3CE3 - Community Exhibitions",
-    "department": "ART",
-    "courseCode": "3CE3",
-    "courseName": "Community Exhibitions"
-  },
-  {
-    "fullName": "ART 3CF3 - Concentrated Study - Foundry",
-    "department": "ART",
-    "courseCode": "3CF3",
-    "courseName": "Concentrated Study - Foundry"
-  },
-  {
-    "fullName": "ART 3CI3 - Concentrated Study - Intaglio",
-    "department": "ART",
-    "courseCode": "3CI3",
-    "courseName": "Concentrated Study - Intaglio"
-  },
-  {
-    "fullName": "ART 3CL3 - Concentrated Study - Lithography",
-    "department": "ART",
-    "courseCode": "3CL3",
-    "courseName": "Concentrated Study - Lithography"
-  },
-  {
-    "fullName": "ART 3D03 - Practical Issues",
-    "department": "ART",
-    "courseCode": "3D03",
-    "courseName": "Practical Issues"
-  },
-  {
-    "fullName": "ART 3FW3 - Field Work: On-Site Explorations",
-    "department": "ART",
-    "courseCode": "3FW3",
-    "courseName": "Field Work: On-Site Explorations"
-  },
-  {
-    "fullName": "ART 3GS6 A/B - Guided Studio Practice",
-    "department": "ART",
-    "courseCode": "3GS6",
-    "courseName": "Guided Studio Practice"
-  },
-  {
-    "fullName": "ART 3ID3 - Integrated Dimensional Media Concentration",
-    "department": "ART",
-    "courseCode": "3ID3",
-    "courseName": "Integrated Dimensional Media Concentration"
-  },
-  {
-    "fullName": "ART 3IM3 - Integrated Media Concentration",
-    "department": "ART",
-    "courseCode": "3IM3",
-    "courseName": "Integrated Media Concentration"
-  },
-  {
-    "fullName": "ART 3IP3 - Media Installation and Performance",
-    "department": "ART",
-    "courseCode": "3IP3",
-    "courseName": "Media Installation and Performance"
-  },
-  {
-    "fullName": "ART 3J03 - Concentrated Study - Collaborative Community Projects",
-    "department": "ART",
-    "courseCode": "3J03",
-    "courseName": "Concentrated Study - Collaborative Community Projects"
-  },
-  {
-    "fullName": "ART 3PB3 - Photography Beyond the Frame",
-    "department": "ART",
-    "courseCode": "3PB3",
-    "courseName": "Photography Beyond the Frame"
-  },
-  {
-    "fullName": "ART 3PD3 - New Directions in Painting/drawing",
-    "department": "ART",
-    "courseCode": "3PD3",
-    "courseName": "New Directions in Painting/drawing"
-  },
-  {
-    "fullName": "ART 4AR3 - Advanced Research and Presentation Strategies",
-    "department": "ART",
-    "courseCode": "4AR3",
-    "courseName": "Advanced Research and Presentation Strategies"
-  },
-  {
-    "fullName": "ART 4AS6 A/B - Advanced Studio Production and Critical Discourse",
-    "department": "ART",
-    "courseCode": "4AS6",
-    "courseName": "Advanced Studio Production and Critical Discourse"
-  },
-  {
-    "fullName": "ART 4CA3 - 20th Century and Contemporary Art Practices: How Artists Think, Act and Engage",
-    "department": "ART",
-    "courseCode": "4CA3",
-    "courseName": "20th Century and Contemporary Art Practices: How Artists Think, Act and Engage"
-  },
-  {
-    "fullName": "ART 4CC3 - Concentrated Study - Ceramics",
-    "department": "ART",
-    "courseCode": "4CC3",
-    "courseName": "Concentrated Study - Ceramics"
-  },
-  {
-    "fullName": "ART 4CI3 - Concentrated Study - Intaglio",
-    "department": "ART",
-    "courseCode": "4CI3",
-    "courseName": "Concentrated Study - Intaglio"
-  },
-  {
-    "fullName": "ART 4CL3 - Concentrated Study - Lithography",
-    "department": "ART",
-    "courseCode": "4CL3",
-    "courseName": "Concentrated Study - Lithography"
-  },
-  {
-    "fullName": "ART 4EP3 - Exhibition Preparation and Documentation",
-    "department": "ART",
-    "courseCode": "4EP3",
-    "courseName": "Exhibition Preparation and Documentation"
-  },
-  {
-    "fullName": "ART 4PR3 - Professional Residency",
-    "department": "ART",
-    "courseCode": "4PR3",
-    "courseName": "Professional Residency"
-  },
-  {
-    "fullName": "ASTRON 1F03 - Introduction to Astronomy and Astrophysics",
-    "department": "ASTRON",
-    "courseCode": "1F03",
-    "courseName": "Introduction to Astronomy and Astrophysics"
-  },
-  {
-    "fullName": "ASTRON 2B03 - The Big Questions",
-    "department": "ASTRON",
-    "courseCode": "2B03",
-    "courseName": "The Big Questions"
-  },
-  {
-    "fullName": "ASTRON 2E03 - Planetary Astronomy",
-    "department": "ASTRON",
-    "courseCode": "2E03",
-    "courseName": "Planetary Astronomy"
-  },
-  {
-    "fullName": "ASTRON 3X03 - Galaxies and Cosmology",
-    "department": "ASTRON",
-    "courseCode": "3X03",
-    "courseName": "Galaxies and Cosmology"
-  },
-  {
-    "fullName": "ASTRON 3Y03 - Stellar Structure",
-    "department": "ASTRON",
-    "courseCode": "3Y03",
-    "courseName": "Stellar Structure"
-  },
-  {
-    "fullName": "ASTRON 4X03 - Astrophysics Data Analysis Project Course",
-    "department": "ASTRON",
-    "courseCode": "4X03",
-    "courseName": "Astrophysics Data Analysis Project Course"
+    "fullName": "BIOMEDDC 4B03 - Road to Biomedical Commercialization",
+    "department": "BIOMEDDC",
+    "courseCode": "4B03",
+    "courseName": "Road to Biomedical Commercialization"
   },
   {
     "fullName": "BIOPHYS 1S03 - Biophysics of Movement and the Senses: From Microbes to Moose",
@@ -1366,516 +1876,6 @@
     "department": "BIOSAFE",
     "courseCode": "1BS0",
     "courseName": "Biosafety Training"
-  },
-  {
-    "fullName": "AUTOTECH 2AC3 - Advanced CAD",
-    "department": "AUTOTECH",
-    "courseCode": "2AC3",
-    "courseName": "Advanced CAD"
-  },
-  {
-    "fullName": "AUTOTECH 2AE3 - Design of Machine Elements",
-    "department": "AUTOTECH",
-    "courseCode": "2AE3",
-    "courseName": "Design of Machine Elements"
-  },
-  {
-    "fullName": "AUTOTECH 2CD3 - Computer Aided Design",
-    "department": "AUTOTECH",
-    "courseCode": "2CD3",
-    "courseName": "Computer Aided Design"
-  },
-  {
-    "fullName": "AUTOTECH 2MT3 - Structure and Properties of Materials",
-    "department": "AUTOTECH",
-    "courseCode": "2MT3",
-    "courseName": "Structure and Properties of Materials"
-  },
-  {
-    "fullName": "AUTOTECH 2TS3 - Thermodynamics and Heat Transfer",
-    "department": "AUTOTECH",
-    "courseCode": "2TS3",
-    "courseName": "Thermodynamics and Heat Transfer"
-  },
-  {
-    "fullName": "AUTOTECH 3AE3 - Automotive Engineering Technology",
-    "department": "AUTOTECH",
-    "courseCode": "3AE3",
-    "courseName": "Automotive Engineering Technology"
-  },
-  {
-    "fullName": "AUTOTECH 3AV3 - Electric and Hybrid Vehicles",
-    "department": "AUTOTECH",
-    "courseCode": "3AV3",
-    "courseName": "Electric and Hybrid Vehicles"
-  },
-  {
-    "fullName": "AUTOTECH 3CT3 - Control Theory",
-    "department": "AUTOTECH",
-    "courseCode": "3CT3",
-    "courseName": "Control Theory"
-  },
-  {
-    "fullName": "AUTOTECH 3MP3 - Manufacturing Processes and Systems",
-    "department": "AUTOTECH",
-    "courseCode": "3MP3",
-    "courseName": "Manufacturing Processes and Systems"
-  },
-  {
-    "fullName": "AUTOTECH 3MV3 - Mechatronics",
-    "department": "AUTOTECH",
-    "courseCode": "3MV3",
-    "courseName": "Mechatronics"
-  },
-  {
-    "fullName": "AUTOTECH 3TS3 - Fluid Mechanics",
-    "department": "AUTOTECH",
-    "courseCode": "3TS3",
-    "courseName": "Fluid Mechanics"
-  },
-  {
-    "fullName": "AUTOTECH 3VD3 - Mechanical Vibrations",
-    "department": "AUTOTECH",
-    "courseCode": "3VD3",
-    "courseName": "Mechanical Vibrations"
-  },
-  {
-    "fullName": "AUTOTECH 4AE3 - Internal Combustion Engines",
-    "department": "AUTOTECH",
-    "courseCode": "4AE3",
-    "courseName": "Internal Combustion Engines"
-  },
-  {
-    "fullName": "AUTOTECH 4AT3 - Conceptual Design of Electric and Hybrid Vehicles",
-    "department": "AUTOTECH",
-    "courseCode": "4AT3",
-    "courseName": "Conceptual Design of Electric and Hybrid Vehicles"
-  },
-  {
-    "fullName": "AUTOTECH 4CI3 - Robotics and Computer Integrated Manufacturing",
-    "department": "AUTOTECH",
-    "courseCode": "4CI3",
-    "courseName": "Robotics and Computer Integrated Manufacturing"
-  },
-  {
-    "fullName": "AUTOTECH 4DV3 - Vehicle Dynamics",
-    "department": "AUTOTECH",
-    "courseCode": "4DV3",
-    "courseName": "Vehicle Dynamics"
-  },
-  {
-    "fullName": "AUTOTECH 4EC3 - Electrical and Electronics Control Systems",
-    "department": "AUTOTECH",
-    "courseCode": "4EC3",
-    "courseName": "Electrical and Electronics Control Systems"
-  },
-  {
-    "fullName": "AUTOTECH 4MS3 - Kinematic and Dynamic Modelling and Simulation",
-    "department": "AUTOTECH",
-    "courseCode": "4MS3",
-    "courseName": "Kinematic and Dynamic Modelling and Simulation"
-  },
-  {
-    "fullName": "AUTOTECH 4TR1 - Capstone Design I",
-    "department": "AUTOTECH",
-    "courseCode": "4TR1",
-    "courseName": "Capstone Design I"
-  },
-  {
-    "fullName": "AUTOTECH 4TR3 - Capstone Design II",
-    "department": "AUTOTECH",
-    "courseCode": "4TR3",
-    "courseName": "Capstone Design II"
-  },
-  {
-    "fullName": "ARTSSCI 1A06 A/B - Practices of Knowledge",
-    "department": "ARTSSCI",
-    "courseCode": "1A06",
-    "courseName": "Practices of Knowledge"
-  },
-  {
-    "fullName": "ARTSSCI 1B03 - Writing",
-    "department": "ARTSSCI",
-    "courseCode": "1B03",
-    "courseName": "Writing"
-  },
-  {
-    "fullName": "ARTSSCI 1BB3 - Argumentation",
-    "department": "ARTSSCI",
-    "courseCode": "1BB3",
-    "courseName": "Argumentation"
-  },
-  {
-    "fullName": "ARTSSCI 1C03 - Inquiry: Global Challenges",
-    "department": "ARTSSCI",
-    "courseCode": "1C03",
-    "courseName": "Inquiry: Global Challenges"
-  },
-  {
-    "fullName": "ARTSSCI 1CC3 - Contemporary Indigenous Studies",
-    "department": "ARTSSCI",
-    "courseCode": "1CC3",
-    "courseName": "Contemporary Indigenous Studies"
-  },
-  {
-    "fullName": "ARTSSCI 1D06 A/B - Calculus",
-    "department": "ARTSSCI",
-    "courseCode": "1D06",
-    "courseName": "Calculus"
-  },
-  {
-    "fullName": "ARTSSCI 2A06 A/B - Social and Political Thought",
-    "department": "ARTSSCI",
-    "courseCode": "2A06",
-    "courseName": "Social and Political Thought"
-  },
-  {
-    "fullName": "ARTSSCI 2D06 A/B - Physics",
-    "department": "ARTSSCI",
-    "courseCode": "2D06",
-    "courseName": "Physics"
-  },
-  {
-    "fullName": "ARTSSCI 2E03 - Economics: Principles and Policy",
-    "department": "ARTSSCI",
-    "courseCode": "2E03",
-    "courseName": "Economics: Principles and Policy"
-  },
-  {
-    "fullName": "ARTSSCI 2R03 - Applied Statistical Inference",
-    "department": "ARTSSCI",
-    "courseCode": "2R03",
-    "courseName": "Applied Statistical Inference"
-  },
-  {
-    "fullName": "ARTSSCI 3A06 A/B - Literature",
-    "department": "ARTSSCI",
-    "courseCode": "3A06",
-    "courseName": "Literature"
-  },
-  {
-    "fullName": "ARTSSCI 3B03 - Technology and Society I",
-    "department": "ARTSSCI",
-    "courseCode": "3B03",
-    "courseName": "Technology and Society I"
-  },
-  {
-    "fullName": "ARTSSCI 3BB3 - Technology and Society II",
-    "department": "ARTSSCI",
-    "courseCode": "3BB3",
-    "courseName": "Technology and Society II"
-  },
-  {
-    "fullName": "ARTSSCI 3BC3 - Technology and Society III",
-    "department": "ARTSSCI",
-    "courseCode": "3BC3",
-    "courseName": "Technology and Society III"
-  },
-  {
-    "fullName": "ARTSSCI 3CL3 - Theatre, Self, and Social Development",
-    "department": "ARTSSCI",
-    "courseCode": "3CL3",
-    "courseName": "Theatre, Self, and Social Development"
-  },
-  {
-    "fullName": "ARTSSCI 3CU3 - Alumni Experience Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "3CU3",
-    "courseName": "Alumni Experience Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 3EH3 - Exploring Hamilton Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "3EH3",
-    "courseName": "Exploring Hamilton Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 3F03 - Experiential Project in Teaching and Learning",
-    "department": "ARTSSCI",
-    "courseCode": "3F03",
-    "courseName": "Experiential Project in Teaching and Learning"
-  },
-  {
-    "fullName": "ARTSSCI 3GJ3 - Global Justice Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "3GJ3",
-    "courseName": "Global Justice Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 3L03 - The Indian Religious Tradition",
-    "department": "ARTSSCI",
-    "courseCode": "3L03",
-    "courseName": "The Indian Religious Tradition"
-  },
-  {
-    "fullName": "ARTSSCI 3S03 - The East Asian Religious Tradition",
-    "department": "ARTSSCI",
-    "courseCode": "3S03",
-    "courseName": "The East Asian Religious Tradition"
-  },
-  {
-    "fullName": "ARTSSCI 3TR3 - Trees Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "3TR3",
-    "courseName": "Trees Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 3X03 - Individual Study",
-    "department": "ARTSSCI",
-    "courseCode": "3X03",
-    "courseName": "Individual Study"
-  },
-  {
-    "fullName": "ARTSSCI 4A06 A/B - Individual Study",
-    "department": "ARTSSCI",
-    "courseCode": "4A06",
-    "courseName": "Individual Study"
-  },
-  {
-    "fullName": "ARTSSCI 4A09 A/B - Individual Study",
-    "department": "ARTSSCI",
-    "courseCode": "4A09",
-    "courseName": "Individual Study"
-  },
-  {
-    "fullName": "ARTSSCI 4BP3 - Bodies and Bodies Politic: From Public Health to Global Health",
-    "department": "ARTSSCI",
-    "courseCode": "4BP3",
-    "courseName": "Bodies and Bodies Politic: From Public Health to Global Health"
-  },
-  {
-    "fullName": "ARTSSCI 4C06 A/B - Thesis",
-    "department": "ARTSSCI",
-    "courseCode": "4C06",
-    "courseName": "Thesis"
-  },
-  {
-    "fullName": "ARTSSCI 4C09 A/B - Thesis",
-    "department": "ARTSSCI",
-    "courseCode": "4C09",
-    "courseName": "Thesis"
-  },
-  {
-    "fullName": "ARTSSCI 4CA3 - Legal Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4CA3",
-    "courseName": "Legal Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4CB3 - Education Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4CB3",
-    "courseName": "Education Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4CD3 - Research and Creative Writing",
-    "department": "ARTSSCI",
-    "courseCode": "4CD3",
-    "courseName": "Research and Creative Writing"
-  },
-  {
-    "fullName": "ARTSSCI 4CF3 - How Science Speaks to Power",
-    "department": "ARTSSCI",
-    "courseCode": "4CF3",
-    "courseName": "How Science Speaks to Power"
-  },
-  {
-    "fullName": "ARTSSCI 4CI3 - Diversity and Human Rights Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4CI3",
-    "courseName": "Diversity and Human Rights Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4CP3 - Media Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4CP3",
-    "courseName": "Media Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4CT3 - Medical Humanities Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4CT3",
-    "courseName": "Medical Humanities Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4EP3 - Environmental Policy Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4EP3",
-    "courseName": "Environmental Policy Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4HS3 - History of Science Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4HS3",
-    "courseName": "History of Science Inquiry"
-  },
-  {
-    "fullName": "ARTSSCI 4MN1 - Local Explorations",
-    "department": "ARTSSCI",
-    "courseCode": "4MN1",
-    "courseName": "Local Explorations"
-  },
-  {
-    "fullName": "ARTSSCI 4MN2 - Movement and Integration",
-    "department": "ARTSSCI",
-    "courseCode": "4MN2",
-    "courseName": "Movement and Integration"
-  },
-  {
-    "fullName": "ARTSSCI 4VC3 - Visual Culture Inquiry",
-    "department": "ARTSSCI",
-    "courseCode": "4VC3",
-    "courseName": "Visual Culture Inquiry"
-  },
-  {
-    "fullName": "BIOCHEM 2B03 - Nucleic Acid Structure and Function",
-    "department": "BIOCHEM",
-    "courseCode": "2B03",
-    "courseName": "Nucleic Acid Structure and Function"
-  },
-  {
-    "fullName": "BIOCHEM 2BB3 - Protein Structure and Enzyme Function",
-    "department": "BIOCHEM",
-    "courseCode": "2BB3",
-    "courseName": "Protein Structure and Enzyme Function"
-  },
-  {
-    "fullName": "BIOCHEM 2EE3 - Metabolism and Physiological Chemistry",
-    "department": "BIOCHEM",
-    "courseCode": "2EE3",
-    "courseName": "Metabolism and Physiological Chemistry"
-  },
-  {
-    "fullName": "BIOCHEM 2L06 A/B - Inquiry in Biochemical Techniques",
-    "department": "BIOCHEM",
-    "courseCode": "2L06",
-    "courseName": "Inquiry in Biochemical Techniques"
-  },
-  {
-    "fullName": "BIOCHEM 3A03 - Biochemical Research Practice",
-    "department": "BIOCHEM",
-    "courseCode": "3A03",
-    "courseName": "Biochemical Research Practice"
-  },
-  {
-    "fullName": "BIOCHEM 3BP3 - Practical Bioinformatics in the Genomics Era",
-    "department": "BIOCHEM",
-    "courseCode": "3BP3",
-    "courseName": "Practical Bioinformatics in the Genomics Era"
-  },
-  {
-    "fullName": "BIOCHEM 3D03 - Metabolism and Regulation",
-    "department": "BIOCHEM",
-    "courseCode": "3D03",
-    "courseName": "Metabolism and Regulation"
-  },
-  {
-    "fullName": "BIOCHEM 3EE3 - Research Advances in Cell Biology and Biochemistry",
-    "department": "BIOCHEM",
-    "courseCode": "3EE3",
-    "courseName": "Research Advances in Cell Biology and Biochemistry"
-  },
-  {
-    "fullName": "BIOCHEM 3G03 - Proteins and Nucleic Acids",
-    "department": "BIOCHEM",
-    "courseCode": "3G03",
-    "courseName": "Proteins and Nucleic Acids"
-  },
-  {
-    "fullName": "BIOCHEM 3H03 - Clinical Biochemistry",
-    "department": "BIOCHEM",
-    "courseCode": "3H03",
-    "courseName": "Clinical Biochemistry"
-  },
-  {
-    "fullName": "BIOCHEM 3LA3 - Advanced Biochemistry Techniques",
-    "department": "BIOCHEM",
-    "courseCode": "3LA3",
-    "courseName": "Advanced Biochemistry Techniques"
-  },
-  {
-    "fullName": "BIOCHEM 3MI3 - Microbial Interactions",
-    "department": "BIOCHEM",
-    "courseCode": "3MI3",
-    "courseName": "Microbial Interactions"
-  },
-  {
-    "fullName": "BIOCHEM 3R06 A/B S - Research Project",
-    "department": "BIOCHEM",
-    "courseCode": "3R06",
-    "courseName": "Research Project"
-  },
-  {
-    "fullName": "BIOCHEM 3Z03 - Structural Determination and Analysis of Macromolecules",
-    "department": "BIOCHEM",
-    "courseCode": "3Z03",
-    "courseName": "Structural Determination and Analysis of Macromolecules"
-  },
-  {
-    "fullName": "BIOCHEM 4C03 - Inquiry in Biochemistry",
-    "department": "BIOCHEM",
-    "courseCode": "4C03",
-    "courseName": "Inquiry in Biochemistry"
-  },
-  {
-    "fullName": "BIOCHEM 4E03 - Gene Regulation in Stem Cells and Development",
-    "department": "BIOCHEM",
-    "courseCode": "4E03",
-    "courseName": "Gene Regulation in Stem Cells and Development"
-  },
-  {
-    "fullName": "BIOCHEM 4F09 A/B - Senior Thesis",
-    "department": "BIOCHEM",
-    "courseCode": "4F09",
-    "courseName": "Senior Thesis"
-  },
-  {
-    "fullName": "BIOCHEM 4H03 - Biotechnology and Drug Discovery",
-    "department": "BIOCHEM",
-    "courseCode": "4H03",
-    "courseName": "Biotechnology and Drug Discovery"
-  },
-  {
-    "fullName": "BIOCHEM 4J03 - Immunological Principles in Practice",
-    "department": "BIOCHEM",
-    "courseCode": "4J03",
-    "courseName": "Immunological Principles in Practice"
-  },
-  {
-    "fullName": "BIOCHEM 4M03 - Cellular and Integrated Metabolism",
-    "department": "BIOCHEM",
-    "courseCode": "4M03",
-    "courseName": "Cellular and Integrated Metabolism"
-  },
-  {
-    "fullName": "BIOCHEM 4N03 - Molecular Membrane Biology",
-    "department": "BIOCHEM",
-    "courseCode": "4N03",
-    "courseName": "Molecular Membrane Biology"
-  },
-  {
-    "fullName": "BIOCHEM 4Q03 - Biochemical Pharmacology",
-    "department": "BIOCHEM",
-    "courseCode": "4Q03",
-    "courseName": "Biochemical Pharmacology"
-  },
-  {
-    "fullName": "BIOCHEM 4S03 - Introduction to Molecular Biophysics",
-    "department": "BIOCHEM",
-    "courseCode": "4S03",
-    "courseName": "Introduction to Molecular Biophysics"
-  },
-  {
-    "fullName": "BIOCHEM 4T15 A/B - Senior Thesis",
-    "department": "BIOCHEM",
-    "courseCode": "4T15",
-    "courseName": "Senior Thesis"
-  },
-  {
-    "fullName": "BIOCHEM 4Z03 - Senior Project",
-    "department": "BIOCHEM",
-    "courseCode": "4Z03",
-    "courseName": "Senior Project"
   },
   {
     "fullName": "BIOTECH 2B03 - Biotechnology Concepts",
@@ -2352,6 +2352,384 @@
     "courseName": "Image Processing"
   },
   {
+    "fullName": "COMPSCI 1JC3 - Introduction to Computational Thinking",
+    "department": "COMPSCI",
+    "courseCode": "1JC3",
+    "courseName": "Introduction to Computational Thinking"
+  },
+  {
+    "fullName": "COMPSCI 1MD3 - Introduction to Programming",
+    "department": "COMPSCI",
+    "courseCode": "1MD3",
+    "courseName": "Introduction to Programming"
+  },
+  {
+    "fullName": "COMPSCI 1TA3 - Elementary Computing and Computer Use",
+    "department": "COMPSCI",
+    "courseCode": "1TA3",
+    "courseName": "Elementary Computing and Computer Use"
+  },
+  {
+    "fullName": "COMPSCI 1XA3 - Computer Science Practice and Experience: Basic Concepts",
+    "department": "COMPSCI",
+    "courseCode": "1XA3",
+    "courseName": "Computer Science Practice and Experience: Basic Concepts"
+  },
+  {
+    "fullName": "COMPSCI 2C03 - Data Structures and Algorithms",
+    "department": "COMPSCI",
+    "courseCode": "2C03",
+    "courseName": "Data Structures and Algorithms"
+  },
+  {
+    "fullName": "COMPSCI 2DM3 - Discrete Mathematics with Applications I",
+    "department": "COMPSCI",
+    "courseCode": "2DM3",
+    "courseName": "Discrete Mathematics with Applications I"
+  },
+  {
+    "fullName": "COMPSCI 2FA3 - Discrete Mathematics with Applications II",
+    "department": "COMPSCI",
+    "courseCode": "2FA3",
+    "courseName": "Discrete Mathematics with Applications II"
+  },
+  {
+    "fullName": "COMPSCI 2GA3 - Computer Architecture",
+    "department": "COMPSCI",
+    "courseCode": "2GA3",
+    "courseName": "Computer Architecture"
+  },
+  {
+    "fullName": "COMPSCI 2ME3 - Introduction to Software Development",
+    "department": "COMPSCI",
+    "courseCode": "2ME3",
+    "courseName": "Introduction to Software Development"
+  },
+  {
+    "fullName": "COMPSCI 2S03 - Principles of Programming",
+    "department": "COMPSCI",
+    "courseCode": "2S03",
+    "courseName": "Principles of Programming"
+  },
+  {
+    "fullName": "COMPSCI 2XA3 - Computer Science Practice and Experience: Software Development Skills",
+    "department": "COMPSCI",
+    "courseCode": "2XA3",
+    "courseName": "Computer Science Practice and Experience: Software Development Skills"
+  },
+  {
+    "fullName": "COMPSCI 2XB3 - Computer Science Practice and Experience: Binding Theory to Practice",
+    "department": "COMPSCI",
+    "courseCode": "2XB3",
+    "courseName": "Computer Science Practice and Experience: Binding Theory to Practice"
+  },
+  {
+    "fullName": "COMPSCI 3AC3 - Algorithms and Complexity",
+    "department": "COMPSCI",
+    "courseCode": "3AC3",
+    "courseName": "Algorithms and Complexity"
+  },
+  {
+    "fullName": "COMPSCI 3DB3 - Data Bases",
+    "department": "COMPSCI",
+    "courseCode": "3DB3",
+    "courseName": "Data Bases"
+  },
+  {
+    "fullName": "COMPSCI 3EA3 - Software Specifications and Correctness",
+    "department": "COMPSCI",
+    "courseCode": "3EA3",
+    "courseName": "Software Specifications and Correctness"
+  },
+  {
+    "fullName": "COMPSCI 3FP3 - Functional Programming",
+    "department": "COMPSCI",
+    "courseCode": "3FP3",
+    "courseName": "Functional Programming"
+  },
+  {
+    "fullName": "COMPSCI 3GC3 - Computer Graphics",
+    "department": "COMPSCI",
+    "courseCode": "3GC3",
+    "courseName": "Computer Graphics"
+  },
+  {
+    "fullName": "COMPSCI 3I03 - Communication Skills",
+    "department": "COMPSCI",
+    "courseCode": "3I03",
+    "courseName": "Communication Skills"
+  },
+  {
+    "fullName": "COMPSCI 3IS3 - Information Security",
+    "department": "COMPSCI",
+    "courseCode": "3IS3",
+    "courseName": "Information Security"
+  },
+  {
+    "fullName": "COMPSCI 3MI3 - Principles of Programming Languages",
+    "department": "COMPSCI",
+    "courseCode": "3MI3",
+    "courseName": "Principles of Programming Languages"
+  },
+  {
+    "fullName": "COMPSCI 3RA3 - Software Requirements and Security Considerations",
+    "department": "COMPSCI",
+    "courseCode": "3RA3",
+    "courseName": "Software Requirements and Security Considerations"
+  },
+  {
+    "fullName": "COMPSCI 3SD3 - Concurrent Systems",
+    "department": "COMPSCI",
+    "courseCode": "3SD3",
+    "courseName": "Concurrent Systems"
+  },
+  {
+    "fullName": "COMPSCI 3SH3 - Computer Science Practice and Experience: Operating Systems",
+    "department": "COMPSCI",
+    "courseCode": "3SH3",
+    "courseName": "Computer Science Practice and Experience: Operating Systems"
+  },
+  {
+    "fullName": "COMPSCI 4AD3 - Advanced Databases",
+    "department": "COMPSCI",
+    "courseCode": "4AD3",
+    "courseName": "Advanced Databases"
+  },
+  {
+    "fullName": "COMPSCI 4AR3 - Software Architecture",
+    "department": "COMPSCI",
+    "courseCode": "4AR3",
+    "courseName": "Software Architecture"
+  },
+  {
+    "fullName": "COMPSCI 4C03 - Computer Networks and Security",
+    "department": "COMPSCI",
+    "courseCode": "4C03",
+    "courseName": "Computer Networks and Security"
+  },
+  {
+    "fullName": "COMPSCI 4DC3 - Distributed Computing",
+    "department": "COMPSCI",
+    "courseCode": "4DC3",
+    "courseName": "Distributed Computing"
+  },
+  {
+    "fullName": "COMPSCI 4E03 - Performance Analysis of Computer Systems",
+    "department": "COMPSCI",
+    "courseCode": "4E03",
+    "courseName": "Performance Analysis of Computer Systems"
+  },
+  {
+    "fullName": "COMPSCI 4EN3 A/B - Software Entrepreneurship",
+    "department": "COMPSCI",
+    "courseCode": "4EN3",
+    "courseName": "Software Entrepreneurship"
+  },
+  {
+    "fullName": "COMPSCI 4F03 - Parallel Computing",
+    "department": "COMPSCI",
+    "courseCode": "4F03",
+    "courseName": "Parallel Computing"
+  },
+  {
+    "fullName": "COMPSCI 4HC3 - Human Computer Interaction",
+    "department": "COMPSCI",
+    "courseCode": "4HC3",
+    "courseName": "Human Computer Interaction"
+  },
+  {
+    "fullName": "COMPSCI 4ML3 - Introduction to Machine Learning",
+    "department": "COMPSCI",
+    "courseCode": "4ML3",
+    "courseName": "Introduction to Machine Learning"
+  },
+  {
+    "fullName": "COMPSCI 4O03 - Linear Optimization",
+    "department": "COMPSCI",
+    "courseCode": "4O03",
+    "courseName": "Linear Optimization"
+  },
+  {
+    "fullName": "COMPSCI 4TB3 - Syntax-Based Tools and Compilers",
+    "department": "COMPSCI",
+    "courseCode": "4TB3",
+    "courseName": "Syntax-Based Tools and Compilers"
+  },
+  {
+    "fullName": "COMPSCI 4TE3 - Continuous Optimization",
+    "department": "COMPSCI",
+    "courseCode": "4TE3",
+    "courseName": "Continuous Optimization"
+  },
+  {
+    "fullName": "COMPSCI 4TH3 - Theory of Computation",
+    "department": "COMPSCI",
+    "courseCode": "4TH3",
+    "courseName": "Theory of Computation"
+  },
+  {
+    "fullName": "COMPSCI 4TI3 - Fundamentals of Image Processing",
+    "department": "COMPSCI",
+    "courseCode": "4TI3",
+    "courseName": "Fundamentals of Image Processing"
+  },
+  {
+    "fullName": "COMPSCI 4WW3 - Web Systems and Web Computing",
+    "department": "COMPSCI",
+    "courseCode": "4WW3",
+    "courseName": "Web Systems and Web Computing"
+  },
+  {
+    "fullName": "COMPSCI 4X03 - Scientific Computation",
+    "department": "COMPSCI",
+    "courseCode": "4X03",
+    "courseName": "Scientific Computation"
+  },
+  {
+    "fullName": "COMPSCI 4Z03 - Directed Readings",
+    "department": "COMPSCI",
+    "courseCode": "4Z03",
+    "courseName": "Directed Readings"
+  },
+  {
+    "fullName": "COMPSCI 4ZP6 A/B - Capstone Project",
+    "department": "COMPSCI",
+    "courseCode": "4ZP6",
+    "courseName": "Capstone Project"
+  },
+  {
+    "fullName": "EARTHSC 1G03 - Earth and the Environment",
+    "department": "EARTHSC",
+    "courseCode": "1G03",
+    "courseName": "Earth and the Environment"
+  },
+  {
+    "fullName": "EARTHSC 2E03 - Earth History",
+    "department": "EARTHSC",
+    "courseCode": "2E03",
+    "courseName": "Earth History"
+  },
+  {
+    "fullName": "EARTHSC 2FE3 - Introduction to Field Methods in Earth Sciences",
+    "department": "EARTHSC",
+    "courseCode": "2FE3",
+    "courseName": "Introduction to Field Methods in Earth Sciences"
+  },
+  {
+    "fullName": "EARTHSC 2GG3 - Natural Disasters",
+    "department": "EARTHSC",
+    "courseCode": "2GG3",
+    "courseName": "Natural Disasters"
+  },
+  {
+    "fullName": "EARTHSC 2K03 - Optical Crystallography and Mineralogy",
+    "department": "EARTHSC",
+    "courseCode": "2K03",
+    "courseName": "Optical Crystallography and Mineralogy"
+  },
+  {
+    "fullName": "EARTHSC 2T03 - Geology of Canada",
+    "department": "EARTHSC",
+    "courseCode": "2T03",
+    "courseName": "Geology of Canada"
+  },
+  {
+    "fullName": "EARTHSC 3CC3 - Earth\u2019s Changing Climate",
+    "department": "EARTHSC",
+    "courseCode": "3CC3",
+    "courseName": "Earth\u2019s Changing Climate"
+  },
+  {
+    "fullName": "EARTHSC 3E03 - Clastic Sedimentary Environments",
+    "department": "EARTHSC",
+    "courseCode": "3E03",
+    "courseName": "Clastic Sedimentary Environments"
+  },
+  {
+    "fullName": "EARTHSC 3FE3 - Field Camp",
+    "department": "EARTHSC",
+    "courseCode": "3FE3",
+    "courseName": "Field Camp"
+  },
+  {
+    "fullName": "EARTHSC 3K03 - Petrology",
+    "department": "EARTHSC",
+    "courseCode": "3K03",
+    "courseName": "Petrology"
+  },
+  {
+    "fullName": "EARTHSC 3RD3 - Research Design and Dissemination in Earth and Environmental Sciences",
+    "department": "EARTHSC",
+    "courseCode": "3RD3",
+    "courseName": "Research Design and Dissemination in Earth and Environmental Sciences"
+  },
+  {
+    "fullName": "EARTHSC 3W03 - Physical Hydrogeology",
+    "department": "EARTHSC",
+    "courseCode": "3W03",
+    "courseName": "Physical Hydrogeology"
+  },
+  {
+    "fullName": "EARTHSC 3Z03 - Structural Geology",
+    "department": "EARTHSC",
+    "courseCode": "3Z03",
+    "courseName": "Structural Geology"
+  },
+  {
+    "fullName": "EARTHSC 4CC3 - Stable Isotopes in Earth and Environmental Systems",
+    "department": "EARTHSC",
+    "courseCode": "4CC3",
+    "courseName": "Stable Isotopes in Earth and Environmental Systems"
+  },
+  {
+    "fullName": "EARTHSC 4FF3 - Topics of Field Research",
+    "department": "EARTHSC",
+    "courseCode": "4FF3",
+    "courseName": "Topics of Field Research"
+  },
+  {
+    "fullName": "EARTHSC 4G03 - Glacial Sediments and Environments",
+    "department": "EARTHSC",
+    "courseCode": "4G03",
+    "courseName": "Glacial Sediments and Environments"
+  },
+  {
+    "fullName": "EARTHSC 4J03 - Basin Analysis",
+    "department": "EARTHSC",
+    "courseCode": "4J03",
+    "courseName": "Basin Analysis"
+  },
+  {
+    "fullName": "EARTHSC 4MT6 A/B - Senior Thesis",
+    "department": "EARTHSC",
+    "courseCode": "4MT6",
+    "courseName": "Senior Thesis"
+  },
+  {
+    "fullName": "EARTHSC 4P03 - Coral Reef Environments",
+    "department": "EARTHSC",
+    "courseCode": "4P03",
+    "courseName": "Coral Reef Environments"
+  },
+  {
+    "fullName": "EARTHSC 4T03 - Plate Tectonics and Ore Deposits",
+    "department": "EARTHSC",
+    "courseCode": "4T03",
+    "courseName": "Plate Tectonics and Ore Deposits"
+  },
+  {
+    "fullName": "EARTHSC 4VV3 - Environmental Geophysics",
+    "department": "EARTHSC",
+    "courseCode": "4VV3",
+    "courseName": "Environmental Geophysics"
+  },
+  {
+    "fullName": "EARTHSC 4WB3 - Contaminant Hydrogeology",
+    "department": "EARTHSC",
+    "courseCode": "4WB3",
+    "courseName": "Contaminant Hydrogeology"
+  },
+  {
     "fullName": "ECON 1B03 - Introductory Microeconomics",
     "department": "ECON",
     "courseCode": "ECON",
@@ -2808,384 +3186,6 @@
     "courseName": "Digital Communications II"
   },
   {
-    "fullName": "COMPSCI 1JC3 - Introduction to Computational Thinking",
-    "department": "COMPSCI",
-    "courseCode": "1JC3",
-    "courseName": "Introduction to Computational Thinking"
-  },
-  {
-    "fullName": "COMPSCI 1MD3 - Introduction to Programming",
-    "department": "COMPSCI",
-    "courseCode": "1MD3",
-    "courseName": "Introduction to Programming"
-  },
-  {
-    "fullName": "COMPSCI 1TA3 - Elementary Computing and Computer Use",
-    "department": "COMPSCI",
-    "courseCode": "1TA3",
-    "courseName": "Elementary Computing and Computer Use"
-  },
-  {
-    "fullName": "COMPSCI 1XA3 - Computer Science Practice and Experience: Basic Concepts",
-    "department": "COMPSCI",
-    "courseCode": "1XA3",
-    "courseName": "Computer Science Practice and Experience: Basic Concepts"
-  },
-  {
-    "fullName": "COMPSCI 2C03 - Data Structures and Algorithms",
-    "department": "COMPSCI",
-    "courseCode": "2C03",
-    "courseName": "Data Structures and Algorithms"
-  },
-  {
-    "fullName": "COMPSCI 2DM3 - Discrete Mathematics with Applications I",
-    "department": "COMPSCI",
-    "courseCode": "2DM3",
-    "courseName": "Discrete Mathematics with Applications I"
-  },
-  {
-    "fullName": "COMPSCI 2FA3 - Discrete Mathematics with Applications II",
-    "department": "COMPSCI",
-    "courseCode": "2FA3",
-    "courseName": "Discrete Mathematics with Applications II"
-  },
-  {
-    "fullName": "COMPSCI 2GA3 - Computer Architecture",
-    "department": "COMPSCI",
-    "courseCode": "2GA3",
-    "courseName": "Computer Architecture"
-  },
-  {
-    "fullName": "COMPSCI 2ME3 - Introduction to Software Development",
-    "department": "COMPSCI",
-    "courseCode": "2ME3",
-    "courseName": "Introduction to Software Development"
-  },
-  {
-    "fullName": "COMPSCI 2S03 - Principles of Programming",
-    "department": "COMPSCI",
-    "courseCode": "2S03",
-    "courseName": "Principles of Programming"
-  },
-  {
-    "fullName": "COMPSCI 2XA3 - Computer Science Practice and Experience: Software Development Skills",
-    "department": "COMPSCI",
-    "courseCode": "2XA3",
-    "courseName": "Computer Science Practice and Experience: Software Development Skills"
-  },
-  {
-    "fullName": "COMPSCI 2XB3 - Computer Science Practice and Experience: Binding Theory to Practice",
-    "department": "COMPSCI",
-    "courseCode": "2XB3",
-    "courseName": "Computer Science Practice and Experience: Binding Theory to Practice"
-  },
-  {
-    "fullName": "COMPSCI 3AC3 - Algorithms and Complexity",
-    "department": "COMPSCI",
-    "courseCode": "3AC3",
-    "courseName": "Algorithms and Complexity"
-  },
-  {
-    "fullName": "COMPSCI 3DB3 - Data Bases",
-    "department": "COMPSCI",
-    "courseCode": "3DB3",
-    "courseName": "Data Bases"
-  },
-  {
-    "fullName": "COMPSCI 3EA3 - Software Specifications and Correctness",
-    "department": "COMPSCI",
-    "courseCode": "3EA3",
-    "courseName": "Software Specifications and Correctness"
-  },
-  {
-    "fullName": "COMPSCI 3FP3 - Functional Programming",
-    "department": "COMPSCI",
-    "courseCode": "3FP3",
-    "courseName": "Functional Programming"
-  },
-  {
-    "fullName": "COMPSCI 3GC3 - Computer Graphics",
-    "department": "COMPSCI",
-    "courseCode": "3GC3",
-    "courseName": "Computer Graphics"
-  },
-  {
-    "fullName": "COMPSCI 3I03 - Communication Skills",
-    "department": "COMPSCI",
-    "courseCode": "3I03",
-    "courseName": "Communication Skills"
-  },
-  {
-    "fullName": "COMPSCI 3IS3 - Information Security",
-    "department": "COMPSCI",
-    "courseCode": "3IS3",
-    "courseName": "Information Security"
-  },
-  {
-    "fullName": "COMPSCI 3MI3 - Principles of Programming Languages",
-    "department": "COMPSCI",
-    "courseCode": "3MI3",
-    "courseName": "Principles of Programming Languages"
-  },
-  {
-    "fullName": "COMPSCI 3RA3 - Software Requirements and Security Considerations",
-    "department": "COMPSCI",
-    "courseCode": "3RA3",
-    "courseName": "Software Requirements and Security Considerations"
-  },
-  {
-    "fullName": "COMPSCI 3SD3 - Concurrent Systems",
-    "department": "COMPSCI",
-    "courseCode": "3SD3",
-    "courseName": "Concurrent Systems"
-  },
-  {
-    "fullName": "COMPSCI 3SH3 - Computer Science Practice and Experience: Operating Systems",
-    "department": "COMPSCI",
-    "courseCode": "3SH3",
-    "courseName": "Computer Science Practice and Experience: Operating Systems"
-  },
-  {
-    "fullName": "COMPSCI 4AD3 - Advanced Databases",
-    "department": "COMPSCI",
-    "courseCode": "4AD3",
-    "courseName": "Advanced Databases"
-  },
-  {
-    "fullName": "COMPSCI 4AR3 - Software Architecture",
-    "department": "COMPSCI",
-    "courseCode": "4AR3",
-    "courseName": "Software Architecture"
-  },
-  {
-    "fullName": "COMPSCI 4C03 - Computer Networks and Security",
-    "department": "COMPSCI",
-    "courseCode": "4C03",
-    "courseName": "Computer Networks and Security"
-  },
-  {
-    "fullName": "COMPSCI 4DC3 - Distributed Computing",
-    "department": "COMPSCI",
-    "courseCode": "4DC3",
-    "courseName": "Distributed Computing"
-  },
-  {
-    "fullName": "COMPSCI 4E03 - Performance Analysis of Computer Systems",
-    "department": "COMPSCI",
-    "courseCode": "4E03",
-    "courseName": "Performance Analysis of Computer Systems"
-  },
-  {
-    "fullName": "COMPSCI 4EN3 A/B - Software Entrepreneurship",
-    "department": "COMPSCI",
-    "courseCode": "4EN3",
-    "courseName": "Software Entrepreneurship"
-  },
-  {
-    "fullName": "COMPSCI 4F03 - Parallel Computing",
-    "department": "COMPSCI",
-    "courseCode": "4F03",
-    "courseName": "Parallel Computing"
-  },
-  {
-    "fullName": "COMPSCI 4HC3 - Human Computer Interaction",
-    "department": "COMPSCI",
-    "courseCode": "4HC3",
-    "courseName": "Human Computer Interaction"
-  },
-  {
-    "fullName": "COMPSCI 4ML3 - Introduction to Machine Learning",
-    "department": "COMPSCI",
-    "courseCode": "4ML3",
-    "courseName": "Introduction to Machine Learning"
-  },
-  {
-    "fullName": "COMPSCI 4O03 - Linear Optimization",
-    "department": "COMPSCI",
-    "courseCode": "4O03",
-    "courseName": "Linear Optimization"
-  },
-  {
-    "fullName": "COMPSCI 4TB3 - Syntax-Based Tools and Compilers",
-    "department": "COMPSCI",
-    "courseCode": "4TB3",
-    "courseName": "Syntax-Based Tools and Compilers"
-  },
-  {
-    "fullName": "COMPSCI 4TE3 - Continuous Optimization",
-    "department": "COMPSCI",
-    "courseCode": "4TE3",
-    "courseName": "Continuous Optimization"
-  },
-  {
-    "fullName": "COMPSCI 4TH3 - Theory of Computation",
-    "department": "COMPSCI",
-    "courseCode": "4TH3",
-    "courseName": "Theory of Computation"
-  },
-  {
-    "fullName": "COMPSCI 4TI3 - Fundamentals of Image Processing",
-    "department": "COMPSCI",
-    "courseCode": "4TI3",
-    "courseName": "Fundamentals of Image Processing"
-  },
-  {
-    "fullName": "COMPSCI 4WW3 - Web Systems and Web Computing",
-    "department": "COMPSCI",
-    "courseCode": "4WW3",
-    "courseName": "Web Systems and Web Computing"
-  },
-  {
-    "fullName": "COMPSCI 4X03 - Scientific Computation",
-    "department": "COMPSCI",
-    "courseCode": "4X03",
-    "courseName": "Scientific Computation"
-  },
-  {
-    "fullName": "COMPSCI 4Z03 - Directed Readings",
-    "department": "COMPSCI",
-    "courseCode": "4Z03",
-    "courseName": "Directed Readings"
-  },
-  {
-    "fullName": "COMPSCI 4ZP6 A/B - Capstone Project",
-    "department": "COMPSCI",
-    "courseCode": "4ZP6",
-    "courseName": "Capstone Project"
-  },
-  {
-    "fullName": "EARTHSC 1G03 - Earth and the Environment",
-    "department": "EARTHSC",
-    "courseCode": "1G03",
-    "courseName": "Earth and the Environment"
-  },
-  {
-    "fullName": "EARTHSC 2E03 - Earth History",
-    "department": "EARTHSC",
-    "courseCode": "2E03",
-    "courseName": "Earth History"
-  },
-  {
-    "fullName": "EARTHSC 2FE3 - Introduction to Field Methods in Earth Sciences",
-    "department": "EARTHSC",
-    "courseCode": "2FE3",
-    "courseName": "Introduction to Field Methods in Earth Sciences"
-  },
-  {
-    "fullName": "EARTHSC 2GG3 - Natural Disasters",
-    "department": "EARTHSC",
-    "courseCode": "2GG3",
-    "courseName": "Natural Disasters"
-  },
-  {
-    "fullName": "EARTHSC 2K03 - Optical Crystallography and Mineralogy",
-    "department": "EARTHSC",
-    "courseCode": "2K03",
-    "courseName": "Optical Crystallography and Mineralogy"
-  },
-  {
-    "fullName": "EARTHSC 2T03 - Geology of Canada",
-    "department": "EARTHSC",
-    "courseCode": "2T03",
-    "courseName": "Geology of Canada"
-  },
-  {
-    "fullName": "EARTHSC 3CC3 - Earth\u2019s Changing Climate",
-    "department": "EARTHSC",
-    "courseCode": "3CC3",
-    "courseName": "Earth\u2019s Changing Climate"
-  },
-  {
-    "fullName": "EARTHSC 3E03 - Clastic Sedimentary Environments",
-    "department": "EARTHSC",
-    "courseCode": "3E03",
-    "courseName": "Clastic Sedimentary Environments"
-  },
-  {
-    "fullName": "EARTHSC 3FE3 - Field Camp",
-    "department": "EARTHSC",
-    "courseCode": "3FE3",
-    "courseName": "Field Camp"
-  },
-  {
-    "fullName": "EARTHSC 3K03 - Petrology",
-    "department": "EARTHSC",
-    "courseCode": "3K03",
-    "courseName": "Petrology"
-  },
-  {
-    "fullName": "EARTHSC 3RD3 - Research Design and Dissemination in Earth and Environmental Sciences",
-    "department": "EARTHSC",
-    "courseCode": "3RD3",
-    "courseName": "Research Design and Dissemination in Earth and Environmental Sciences"
-  },
-  {
-    "fullName": "EARTHSC 3W03 - Physical Hydrogeology",
-    "department": "EARTHSC",
-    "courseCode": "3W03",
-    "courseName": "Physical Hydrogeology"
-  },
-  {
-    "fullName": "EARTHSC 3Z03 - Structural Geology",
-    "department": "EARTHSC",
-    "courseCode": "3Z03",
-    "courseName": "Structural Geology"
-  },
-  {
-    "fullName": "EARTHSC 4CC3 - Stable Isotopes in Earth and Environmental Systems",
-    "department": "EARTHSC",
-    "courseCode": "4CC3",
-    "courseName": "Stable Isotopes in Earth and Environmental Systems"
-  },
-  {
-    "fullName": "EARTHSC 4FF3 - Topics of Field Research",
-    "department": "EARTHSC",
-    "courseCode": "4FF3",
-    "courseName": "Topics of Field Research"
-  },
-  {
-    "fullName": "EARTHSC 4G03 - Glacial Sediments and Environments",
-    "department": "EARTHSC",
-    "courseCode": "4G03",
-    "courseName": "Glacial Sediments and Environments"
-  },
-  {
-    "fullName": "EARTHSC 4J03 - Basin Analysis",
-    "department": "EARTHSC",
-    "courseCode": "4J03",
-    "courseName": "Basin Analysis"
-  },
-  {
-    "fullName": "EARTHSC 4MT6 A/B - Senior Thesis",
-    "department": "EARTHSC",
-    "courseCode": "4MT6",
-    "courseName": "Senior Thesis"
-  },
-  {
-    "fullName": "EARTHSC 4P03 - Coral Reef Environments",
-    "department": "EARTHSC",
-    "courseCode": "4P03",
-    "courseName": "Coral Reef Environments"
-  },
-  {
-    "fullName": "EARTHSC 4T03 - Plate Tectonics and Ore Deposits",
-    "department": "EARTHSC",
-    "courseCode": "4T03",
-    "courseName": "Plate Tectonics and Ore Deposits"
-  },
-  {
-    "fullName": "EARTHSC 4VV3 - Environmental Geophysics",
-    "department": "EARTHSC",
-    "courseCode": "4VV3",
-    "courseName": "Environmental Geophysics"
-  },
-  {
-    "fullName": "EARTHSC 4WB3 - Contaminant Hydrogeology",
-    "department": "EARTHSC",
-    "courseCode": "4WB3",
-    "courseName": "Contaminant Hydrogeology"
-  },
-  {
     "fullName": "ENGTECH 1AC3 - Analytical Chemistry",
     "department": "ENGTECH",
     "courseCode": "1AC3",
@@ -3406,6 +3406,150 @@
     "department": "ENGTECH",
     "courseCode": "4TF3",
     "courseName": "Mechanics of Fluids"
+  },
+  {
+    "fullName": "ENVIRSC 1C03 - Climate, Water And Environment",
+    "department": "ENVIRSC",
+    "courseCode": "1C03",
+    "courseName": "Climate, Water And Environment"
+  },
+  {
+    "fullName": "ENVIRSC 2B03 - Soils and the Environment",
+    "department": "ENVIRSC",
+    "courseCode": "2B03",
+    "courseName": "Soils and the Environment"
+  },
+  {
+    "fullName": "ENVIRSC 2C03 - Surface Climate Processes and Environmental Interactions",
+    "department": "ENVIRSC",
+    "courseCode": "2C03",
+    "courseName": "Surface Climate Processes and Environmental Interactions"
+  },
+  {
+    "fullName": "ENVIRSC 2Q03 - Introduction to Environmental Geochemistry",
+    "department": "ENVIRSC",
+    "courseCode": "2Q03",
+    "courseName": "Introduction to Environmental Geochemistry"
+  },
+  {
+    "fullName": "ENVIRSC 2W03 - Physical Hydrology",
+    "department": "ENVIRSC",
+    "courseCode": "2W03",
+    "courseName": "Physical Hydrology"
+  },
+  {
+    "fullName": "ENVIRSC 2WW3 - Water and the Environment",
+    "department": "ENVIRSC",
+    "courseCode": "2WW3",
+    "courseName": "Water and the Environment"
+  },
+  {
+    "fullName": "ENVIRSC 3B03 - Ecosystems and Global Change",
+    "department": "ENVIRSC",
+    "courseCode": "3B03",
+    "courseName": "Ecosystems and Global Change"
+  },
+  {
+    "fullName": "ENVIRSC 3IN3 - Internship in Earth and Environmental Sciences",
+    "department": "ENVIRSC",
+    "courseCode": "3IN3",
+    "courseName": "Internship in Earth and Environmental Sciences"
+  },
+  {
+    "fullName": "ENVIRSC 3ME3 - Environmental Field Camp",
+    "department": "ENVIRSC",
+    "courseCode": "3ME3",
+    "courseName": "Environmental Field Camp"
+  },
+  {
+    "fullName": "ENVIRSC 3O03 - Contaminant Fate and Transport",
+    "department": "ENVIRSC",
+    "courseCode": "3O03",
+    "courseName": "Contaminant Fate and Transport"
+  },
+  {
+    "fullName": "ENVIRSC 3U03 - Environmental Systems Modelling",
+    "department": "ENVIRSC",
+    "courseCode": "3U03",
+    "courseName": "Environmental Systems Modelling"
+  },
+  {
+    "fullName": "ENVIRSC 4BB3 - Field Techniques in Hydrology",
+    "department": "ENVIRSC",
+    "courseCode": "4BB3",
+    "courseName": "Field Techniques in Hydrology"
+  },
+  {
+    "fullName": "ENVIRSC 4C03 - Advanced Physical Climatology",
+    "department": "ENVIRSC",
+    "courseCode": "4C03",
+    "courseName": "Advanced Physical Climatology"
+  },
+  {
+    "fullName": "ENVIRSC 4EA3 - Environmental Assessment",
+    "department": "ENVIRSC",
+    "courseCode": "4EA3",
+    "courseName": "Environmental Assessment"
+  },
+  {
+    "fullName": "ENVIRSC 4IN3 - Thesis Internship",
+    "department": "ENVIRSC",
+    "courseCode": "4IN3",
+    "courseName": "Thesis Internship"
+  },
+  {
+    "fullName": "ENVIRSC 4MI3 - Independent Study in Earth and Environmental Sciences",
+    "department": "ENVIRSC",
+    "courseCode": "4MI3",
+    "courseName": "Independent Study in Earth and Environmental Sciences"
+  },
+  {
+    "fullName": "ENVIRSC 4MT6 A/B - Senior Thesis",
+    "department": "ENVIRSC",
+    "courseCode": "4MT6",
+    "courseName": "Senior Thesis"
+  },
+  {
+    "fullName": "ENVIRSC 4N03 - Global Biogeochemical Cycles",
+    "department": "ENVIRSC",
+    "courseCode": "4N03",
+    "courseName": "Global Biogeochemical Cycles"
+  },
+  {
+    "fullName": "ENVIRSC 4W03 - Hydrologic Modelling",
+    "department": "ENVIRSC",
+    "courseCode": "4W03",
+    "courseName": "Hydrologic Modelling"
+  },
+  {
+    "fullName": "EXPLORE 3IE1 - Interdisciplinary Experiences",
+    "department": "EXPLORE",
+    "courseCode": "3IE1",
+    "courseName": "Interdisciplinary Experiences"
+  },
+  {
+    "fullName": "EXPLORE 3IE2 - Interdisciplinary Experiences",
+    "department": "EXPLORE",
+    "courseCode": "3IE2",
+    "courseName": "Interdisciplinary Experiences"
+  },
+  {
+    "fullName": "EXPLORE 3IE3 - Interdisciplinary Experiences",
+    "department": "EXPLORE",
+    "courseCode": "3IE3",
+    "courseName": "Interdisciplinary Experiences"
+  },
+  {
+    "fullName": "EXPLORE 3IS0 - Interdisciplinary Science Field Work",
+    "department": "EXPLORE",
+    "courseCode": "3IS0",
+    "courseName": "Interdisciplinary Science Field Work"
+  },
+  {
+    "fullName": "EXPLORE 3IS3 - Interdisciplinary Science Field Camp",
+    "department": "EXPLORE",
+    "courseCode": "3IS3",
+    "courseName": "Interdisciplinary Science Field Camp"
   },
   {
     "fullName": "FRENCH 1A06 A/B - Introduction to French Studies: Advanced Level",
@@ -4110,18 +4254,6 @@
     "courseName": "Sustainable Cities"
   },
   {
-    "fullName": "GLOBALZN 1A03 - Global Citizenship",
-    "department": "GLOBALZN",
-    "courseCode": "1A03",
-    "courseName": "Global Citizenship"
-  },
-  {
-    "fullName": "GLOBALZN 3A03 - Globalization, Social Justice, and Human Rights",
-    "department": "GLOBALZN",
-    "courseCode": "3A03",
-    "courseName": "Globalization, Social Justice, and Human Rights"
-  },
-  {
     "fullName": "GERMAN 1B03 - Intermediate German I",
     "department": "GERMAN",
     "courseCode": "1B03",
@@ -4206,148 +4338,16 @@
     "courseName": "Advanced German Reading Course (Taught in English)"
   },
   {
-    "fullName": "ENVIRSC 1C03 - Climate, Water And Environment",
-    "department": "ENVIRSC",
-    "courseCode": "1C03",
-    "courseName": "Climate, Water And Environment"
+    "fullName": "GLOBALZN 1A03 - Global Citizenship",
+    "department": "GLOBALZN",
+    "courseCode": "1A03",
+    "courseName": "Global Citizenship"
   },
   {
-    "fullName": "ENVIRSC 2B03 - Soils and the Environment",
-    "department": "ENVIRSC",
-    "courseCode": "2B03",
-    "courseName": "Soils and the Environment"
-  },
-  {
-    "fullName": "ENVIRSC 2C03 - Surface Climate Processes and Environmental Interactions",
-    "department": "ENVIRSC",
-    "courseCode": "2C03",
-    "courseName": "Surface Climate Processes and Environmental Interactions"
-  },
-  {
-    "fullName": "ENVIRSC 2Q03 - Introduction to Environmental Geochemistry",
-    "department": "ENVIRSC",
-    "courseCode": "2Q03",
-    "courseName": "Introduction to Environmental Geochemistry"
-  },
-  {
-    "fullName": "ENVIRSC 2W03 - Physical Hydrology",
-    "department": "ENVIRSC",
-    "courseCode": "2W03",
-    "courseName": "Physical Hydrology"
-  },
-  {
-    "fullName": "ENVIRSC 2WW3 - Water and the Environment",
-    "department": "ENVIRSC",
-    "courseCode": "2WW3",
-    "courseName": "Water and the Environment"
-  },
-  {
-    "fullName": "ENVIRSC 3B03 - Ecosystems and Global Change",
-    "department": "ENVIRSC",
-    "courseCode": "3B03",
-    "courseName": "Ecosystems and Global Change"
-  },
-  {
-    "fullName": "ENVIRSC 3IN3 - Internship in Earth and Environmental Sciences",
-    "department": "ENVIRSC",
-    "courseCode": "3IN3",
-    "courseName": "Internship in Earth and Environmental Sciences"
-  },
-  {
-    "fullName": "ENVIRSC 3ME3 - Environmental Field Camp",
-    "department": "ENVIRSC",
-    "courseCode": "3ME3",
-    "courseName": "Environmental Field Camp"
-  },
-  {
-    "fullName": "ENVIRSC 3O03 - Contaminant Fate and Transport",
-    "department": "ENVIRSC",
-    "courseCode": "3O03",
-    "courseName": "Contaminant Fate and Transport"
-  },
-  {
-    "fullName": "ENVIRSC 3U03 - Environmental Systems Modelling",
-    "department": "ENVIRSC",
-    "courseCode": "3U03",
-    "courseName": "Environmental Systems Modelling"
-  },
-  {
-    "fullName": "ENVIRSC 4BB3 - Field Techniques in Hydrology",
-    "department": "ENVIRSC",
-    "courseCode": "4BB3",
-    "courseName": "Field Techniques in Hydrology"
-  },
-  {
-    "fullName": "ENVIRSC 4C03 - Advanced Physical Climatology",
-    "department": "ENVIRSC",
-    "courseCode": "4C03",
-    "courseName": "Advanced Physical Climatology"
-  },
-  {
-    "fullName": "ENVIRSC 4EA3 - Environmental Assessment",
-    "department": "ENVIRSC",
-    "courseCode": "4EA3",
-    "courseName": "Environmental Assessment"
-  },
-  {
-    "fullName": "ENVIRSC 4IN3 - Thesis Internship",
-    "department": "ENVIRSC",
-    "courseCode": "4IN3",
-    "courseName": "Thesis Internship"
-  },
-  {
-    "fullName": "ENVIRSC 4MI3 - Independent Study in Earth and Environmental Sciences",
-    "department": "ENVIRSC",
-    "courseCode": "4MI3",
-    "courseName": "Independent Study in Earth and Environmental Sciences"
-  },
-  {
-    "fullName": "ENVIRSC 4MT6 A/B - Senior Thesis",
-    "department": "ENVIRSC",
-    "courseCode": "4MT6",
-    "courseName": "Senior Thesis"
-  },
-  {
-    "fullName": "ENVIRSC 4N03 - Global Biogeochemical Cycles",
-    "department": "ENVIRSC",
-    "courseCode": "4N03",
-    "courseName": "Global Biogeochemical Cycles"
-  },
-  {
-    "fullName": "ENVIRSC 4W03 - Hydrologic Modelling",
-    "department": "ENVIRSC",
-    "courseCode": "4W03",
-    "courseName": "Hydrologic Modelling"
-  },
-  {
-    "fullName": "EXPLORE 3IE1 - Interdisciplinary Experiences",
-    "department": "EXPLORE",
-    "courseCode": "3IE1",
-    "courseName": "Interdisciplinary Experiences"
-  },
-  {
-    "fullName": "EXPLORE 3IE2 - Interdisciplinary Experiences",
-    "department": "EXPLORE",
-    "courseCode": "3IE2",
-    "courseName": "Interdisciplinary Experiences"
-  },
-  {
-    "fullName": "EXPLORE 3IE3 - Interdisciplinary Experiences",
-    "department": "EXPLORE",
-    "courseCode": "3IE3",
-    "courseName": "Interdisciplinary Experiences"
-  },
-  {
-    "fullName": "EXPLORE 3IS0 - Interdisciplinary Science Field Work",
-    "department": "EXPLORE",
-    "courseCode": "3IS0",
-    "courseName": "Interdisciplinary Science Field Work"
-  },
-  {
-    "fullName": "EXPLORE 3IS3 - Interdisciplinary Science Field Camp",
-    "department": "EXPLORE",
-    "courseCode": "3IS3",
-    "courseName": "Interdisciplinary Science Field Camp"
+    "fullName": "GLOBALZN 3A03 - Globalization, Social Justice, and Human Rights",
+    "department": "GLOBALZN",
+    "courseCode": "3A03",
+    "courseName": "Globalization, Social Justice, and Human Rights"
   },
   {
     "fullName": "GREEK 1Z03 - Beginner\u2019s Intensive Ancient Greek I",

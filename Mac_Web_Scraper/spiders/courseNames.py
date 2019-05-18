@@ -3,139 +3,32 @@ from selenium import webdriver
 import json
 import re
 
-'''
-How this script gets coursenames
-1. Run the departments spider to get all the departments
-2. Read the departments.json file and use selenium to navigate through all the pages and get their urls
-3. Use those urls and put it in start_urls array and let scrapy do the job in the parse function
-4. Grab a beer and watch the magic
-'''
-
 class CourseNamesSpider(scrapy.Spider):
     name = "coursenames"
 
-    start_urls = [
-        'https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ANTHROP&filter%5B29%5D=&filter%5Bcourse_type%5D=5647&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter',               
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ARABIC&filter%5B29%5D=&filter%5Bcourse_type%5D=5752&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ART&filter%5B29%5D=&filter%5Bcourse_type%5D=5659&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ARTHIST&filter%5B29%5D=&filter%5Bcourse_type%5D=5660&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ARTSSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5648&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ASTRON&filter%5B29%5D=&filter%5Bcourse_type%5D=5661&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=AUTOTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5662&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=BIOCHEM&filter%5B29%5D=&filter%5Bcourse_type%5D=5663&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=BIOLOGY&filter%5B29%5D=&filter%5Bcourse_type%5D=5649&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=BIOMEDDC&filter%5B29%5D=&filter%5Bcourse_type%5D=5749&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=BIOPHYS&filter%5B29%5D=&filter%5Bcourse_type%5D=5664&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=BIOSAFE&filter%5B29%5D=&filter%5Bcourse_type%5D=5756&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=BIOTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5665&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CAYUGA&filter%5B29%5D=&filter%5Bcourse_type%5D=5666&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CHEM&filter%5B29%5D=&filter%5Bcourse_type%5D=5667&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CHEMBIO&filter%5B29%5D=&filter%5Bcourse_type%5D=5668&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CHEMENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5650&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CHINESE&filter%5B29%5D=&filter%5Bcourse_type%5D=5670&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CIVENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5672&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CIVTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5671&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CLASSICS&filter%5B29%5D=&filter%5Bcourse_type%5D=5673&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CMST&filter%5B29%5D=&filter%5Bcourse_type%5D=5674&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=CMTYENGA&filter%5B29%5D=&filter%5Bcourse_type%5D=5651&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=COLLAB&filter%5B29%5D=&filter%5Bcourse_type%5D=5657&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=COMMERCE&filter%5B29%5D=&filter%5Bcourse_type%5D=5750&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=COMPENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5675&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=COMPSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5676&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=EARTHSC&filter%5B29%5D=&filter%5Bcourse_type%5D=5678&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ECON&filter%5B29%5D=&filter%5Bcourse_type%5D=5652&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ELECENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5679&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENGINEER&filter%5B29%5D=&filter%5Bcourse_type%5D=5680&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENGLISH&filter%5B29%5D=&filter%5Bcourse_type%5D=5681&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENGNMGT&filter%5B29%5D=&filter%5Bcourse_type%5D=5683&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENGPHYS&filter%5B29%5D=&filter%5Bcourse_type%5D=5682&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENGSOCTY&filter%5B29%5D=&filter%5Bcourse_type%5D=5684&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENGTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5685&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENRTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5653&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ENVIRSC&filter%5B29%5D=&filter%5Bcourse_type%5D=5686&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=EXPLORE&filter%5B29%5D=&filter%5Bcourse_type%5D=5775&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=FRENCH&filter%5B29%5D=&filter%5Bcourse_type%5D=5687&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=GENTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5688&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=GEOG&filter%5B29%5D=&filter%5Bcourse_type%5D=5689&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=GERMAN&filter%5B29%5D=&filter%5Bcourse_type%5D=5741&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=GLOBALZN&filter%5B29%5D=&filter%5Bcourse_type%5D=5751&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=GREEK&filter%5B29%5D=&filter%5Bcourse_type%5D=5690&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=HEBREW&filter%5B29%5D=&filter%5Bcourse_type%5D=5691&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=HISTORY&filter%5B29%5D=&filter%5Bcourse_type%5D=5692&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=HLTHAGE&filter%5B29%5D=&filter%5Bcourse_type%5D=5743&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=HTHSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5694&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=HUMAN&filter%5B29%5D=&filter%5Bcourse_type%5D=5658&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=HUMBEHV&filter%5B29%5D=&filter%5Bcourse_type%5D=5746&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=IBEHS&filter%5B29%5D=&filter%5Bcourse_type%5D=5695&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=IBH&filter%5B29%5D=&filter%5Bcourse_type%5D=5696&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=INDIGST&filter%5B29%5D=&filter%5Bcourse_type%5D=5757&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=INNOVATE&filter%5B29%5D=&filter%5Bcourse_type%5D=5697&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=INTENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5754&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=INUKTUT&filter%5B29%5D=&filter%5Bcourse_type%5D=5760&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ISCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5904&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=ITALIAN&filter%5B29%5D=&filter%5Bcourse_type%5D=5759&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=JAPANESE&filter%5B29%5D=&filter%5Bcourse_type%5D=5698&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=KINESIOL&filter%5B29%5D=&filter%5Bcourse_type%5D=5699&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=LABRST&filter%5B29%5D=&filter%5Bcourse_type%5D=5654&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=LATIN&filter%5B29%5D=&filter%5Bcourse_type%5D=5700&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=LIFESCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5701&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=LINGUIST&filter%5B29%5D=&filter%5Bcourse_type%5D=5702&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MANTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5703&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MATH&filter%5B29%5D=&filter%5Bcourse_type%5D=5704&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MATLS&filter%5B29%5D=&filter%5Bcourse_type%5D=5705&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MECHENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5655&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MECHTRON&filter%5B29%5D=&filter%5Bcourse_type%5D=5744&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MEDPHYS&filter%5B29%5D=&filter%5Bcourse_type%5D=5706&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MEDRADSC&filter%5B29%5D=&filter%5Bcourse_type%5D=5707&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MELD&filter%5B29%5D=&filter%5Bcourse_type%5D=5708&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MIDWIF&filter%5B29%5D=&filter%5Bcourse_type%5D=5709&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MMEDIA&filter%5B29%5D=&filter%5Bcourse_type%5D=5710&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MOHAWK&filter%5B29%5D=&filter%5Bcourse_type%5D=5711&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MOLBIOL&filter%5B29%5D=&filter%5Bcourse_type%5D=5712&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MUSIC&filter%5B29%5D=&filter%5Bcourse_type%5D=5713&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=MUSICCOG&filter%5B29%5D=&filter%5Bcourse_type%5D=5714&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=NEUROSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5715&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=NURSING&filter%5B29%5D=&filter%5Bcourse_type%5D=5747&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=OJIBWE&filter%5B29%5D=&filter%5Bcourse_type%5D=5716&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PEACEST&filter%5B29%5D=&filter%5Bcourse_type%5D=5717&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PHARMAC&filter%5B29%5D=&filter%5Bcourse_type%5D=5656&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PHILOS&filter%5B29%5D=&filter%5Bcourse_type%5D=5718&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PHYSICS&filter%5B29%5D=&filter%5Bcourse_type%5D=5719&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PNB&filter%5B29%5D=&filter%5Bcourse_type%5D=5720&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=POLISH&filter%5B29%5D=&filter%5Bcourse_type%5D=5721&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=POLSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5722&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PROCTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5723&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=PSYCH&filter%5B29%5D=&filter%5Bcourse_type%5D=5724&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=RECONCIL&filter%5B29%5D=&filter%5Bcourse_type%5D=5725&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=RELIGST&filter%5B29%5D=&filter%5Bcourse_type%5D=5758&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=RUSSIAN&filter%5B29%5D=&filter%5Bcourse_type%5D=5726&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SANSKRIT&filter%5B29%5D=&filter%5Bcourse_type%5D=5727&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SCICOMM&filter%5B29%5D=&filter%5Bcourse_type%5D=5728&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SCIENCE&filter%5B29%5D=&filter%5Bcourse_type%5D=5748&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SEP&filter%5B29%5D=&filter%5Bcourse_type%5D=5729&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SFWRENG&filter%5B29%5D=&filter%5Bcourse_type%5D=5774&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SFWRTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5776&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SMRTTECH&filter%5B29%5D=&filter%5Bcourse_type%5D=5730&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SOCIOL&filter%5B29%5D=&filter%5Bcourse_type%5D=5731&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SOCPSY&filter%5B29%5D=&filter%5Bcourse_type%5D=5732&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SOCSCI&filter%5B29%5D=&filter%5Bcourse_type%5D=5733&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SOCWORK&filter%5B29%5D=&filter%5Bcourse_type%5D=5734&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SPANISH&filter%5B29%5D=&filter%5Bcourse_type%5D=5677&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=STATS&filter%5B29%5D=&filter%5Bcourse_type%5D=5735&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=SUSTAIN&filter%5B29%5D=&filter%5Bcourse_type%5D=5736&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=THTRFLM&filter%5B29%5D=&filter%5Bcourse_type%5D=5737&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=WHMIS&filter%5B29%5D=&filter%5Bcourse_type%5D=5738&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter",
-        "https://academiccalendars.romcmaster.ca/content.php?filter%5B27%5D=WOMENST&filter%5B29%5D=&filter%5Bcourse_type%5D=5739&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=38&expand=&navoid=8070&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter"
-    ]
+    # start_urls = ["https://academiccalendars.romcmaster.ca/content.php?catoid=38&navoid=8070"]
 
-    # def __init__(self):
-    #     options = webdriver.ChromeOptions()
-    #     options.add_argument('headless')
-    #     self.driver = webdriver.Chrome(chrome_options=options)
-    #     self.driver.get("https://academiccalendars.romcmaster.ca/content.php?catoid=38&navoid=8070")
+    def __init__(self):
+        options = webdriver.ChromeOptions()
+        options.add_argument('headless')
+        self.driver = webdriver.Chrome(chrome_options=options)
+        self.index = 0
+        self.keys = self.readDepartments()[0]
+        self.values = self.readDepartments()[1]
+        # self.driver.get("https://academiccalendars.romcmaster.ca/content.php?catoid=38&navoid=8070")
         # self.driver = webdriver.Chrome()
+    
+    def start_requests(self):
+        homeurl = "https://academiccalendars.romcmaster.ca/content.php?catoid=38&navoid=8070"
+        self.driver.get(homeurl)
+        url = self.changeInputs(self.keys[self.index], self.values[self.index])
+        yield scrapy.Request(url, self.parse)
+
 
     def parse(self, response):
+        # print (self.keys)
+        # print (self.values)
+        self.index += 1
         anchorTags = response.xpath("//table[@class='table_default'][2]/tr[position()>2 and position()<last()]/td[2]/a/text()").extract()
         for i in range(len(anchorTags)):
             fullName = anchorTags[i]
@@ -148,35 +41,22 @@ class CourseNamesSpider(scrapy.Spider):
                 "courseCode" : courseCode.group(0).strip(),
                 "courseName" : courseName.group(0).strip()
             }
-        # for j in departments:
-        #     anchorTags = response.xpath("//table[@class='table_default'][2]/tr[position()>2 and position()<last()]/td[2]/a/text()").extract()
-        #     courseNames = []
-        #     for i in range(len(anchorTags)):
-        #         department = re.search("^[\w]*", anchorTags[i])
-        #         courseCode = re.search(r"\b[A-Z0-9]{4}\b", anchorTags[i])
-        #         courseName = re.search(r"(?<= - ).*", anchorTags[i])
-        #         courseNames.append({
-        #             "fullName" : anchorTags[i],
-        #             "department" : department.group(0),
-        #             "courseCode" : courseCode.group(0),
-        #             "courseName" : courseName.group(0)
-        #         })
-        #     for k in courseNames:
-        #         yield k
-        #     url = self.changeInputs(i, departments[j])
-        #     yield response.follow(url, self.parse)
+        url = self.changeInputs(self.keys[self.index], self.values[self.index])
+        yield response.follow(url, self.parse)
 
-    # def readDepartments(self):
-    #     with open("departments.json", "r") as f:
-    #         departments = json.load(f)
-    #     del departments[0]["departments"]["ANTHROP"]
-    #     return departments[0]["departments"]
+    def readDepartments(self):
+        with open("departments.json", "r") as f:
+            departments = json.load(f)
+        departments = departments[0]["departments"]
+        keys =  list(departments.keys())
+        values = list(departments.values())
+        return (keys, values)
 
-    # def changeInputs(self, key, value):
-    #     dptPrefixElement = self.driver.find_element_by_xpath("//select[@id='courseprefix']")
-    #     dptTypeElement = self.driver.find_element_by_xpath("//select[@id='coursetype']")
-    #     filterElement = self.driver.find_element_by_xpath("//input[@id='search-with-filters']")
-    #     dptPrefixElement.send_keys(key)
-    #     dptTypeElement.send_keys(value)
-    #     filterElement.click()
-    #     return self.driver.current_url
+    def changeInputs(self, key, value):
+        dptPrefixElement = self.driver.find_element_by_xpath("//select[@id='courseprefix']")
+        dptTypeElement = self.driver.find_element_by_xpath("//select[@id='coursetype']")
+        filterElement = self.driver.find_element_by_xpath("//input[@id='search-with-filters']")
+        dptPrefixElement.send_keys(key)
+        dptTypeElement.send_keys(value)
+        filterElement.click()
+        return self.driver.current_url
