@@ -32,7 +32,7 @@ class CourseNamesSpider(scrapy.Spider):
         anchorTags = response.xpath("//table[@class='table_default'][2]/tr[position()>2 and position()<last()]/td[2]/a/text()").extract()
         for i in range(len(anchorTags)):
             fullName = anchorTags[i]
-            department = re.search("^[\w]*", anchorTags[i])
+            department = re.search(r"^[\w]*", anchorTags[i])
             courseCode = re.search(r"\b[A-Z0-9]{4}\b", anchorTags[i])
             courseName = re.search(r"(?<= - ).*", anchorTags[i])
             yield {
