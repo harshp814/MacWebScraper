@@ -3,6 +3,10 @@ from selenium import webdriver
 import json
 import re
 
+'''
+Had to use selenium to change the department from the dropdown on the website
+'''
+
 class CourseNamesSpider(scrapy.Spider):
     name = "coursenames"
 
